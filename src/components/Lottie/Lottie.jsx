@@ -1,6 +1,6 @@
 import lottie from "lottie-web";
 import React, { useEffect, createRef } from "react";
-import animation from '../../assets/animations/126196-jansmavip-html-and-coding-pages.json'
+import animation from '../../assets/animations/39702-work-space.json'
 import './Lottie.css'
 
 
@@ -13,14 +13,14 @@ function LottieComp() {
         animationData: animation, // animation file!
         renderer: "svg",
         loop: true,
-        autoplay: true,
+        autoplay: false,
         repeat: false
     });
     useEffect(() => {
         const anim = lottie.loadAnimation({
             container: animationContainer.current,
             renderer: "svg",
-            loop: true,
+            loop: false,
             autoplay: true,
             animationData: animation,
             repeat: false

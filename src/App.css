@@ -1,21 +1,22 @@
 @font-face {
   font-family: Centra;
-  src: url('../../client/src/assets/font/CentraNo2-Bold.ttf');
+  src: url('./assets/font/CentraNo2-Bold.ttf');
   font-weight: 700;
 }
 
 @font-face {
   font-family: Centra;
-  src: url('../../client/src/assets/font/CentraNo2-Medium.ttf');
+  src: url('./assets/font/CentraNo2-Medium.ttf');
   font-weight: 500;
 }
 
 @font-face {
   font-family: Centra;
-  src: url('../../client/src/assets/font/CentraNo2-Book.ttf');
+  src: url('./assets/font/CentraNo2-Book.ttf');
   font-weight: 400;
 }
 
+/************ Default Css ************/
 * {
   margin: 0;
   padding: 0;
@@ -45,4 +46,50 @@ h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
+}
+
+p,
+a,
+li,
+button,
+ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 60%;
+  height: auto;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+@media (min-width:1700px) {
+  main .container {
+    max-width: 100%;
+    padding: 0 150px;
+  }
+}
+
+p.success {
+  color: green;
+}
+
+p.danger {
+  color: red;
 }
