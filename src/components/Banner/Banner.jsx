@@ -2,7 +2,7 @@
 import { Col, Container, Row } from "react-bootstrap"
 import { ArrowRightCircle } from "react-bootstrap-icons"
 import LottieComp from "../Lottie/Lottie"
-import headerImg from "../../assets/img/header-img.svg"
+// import headerImg from "../../assets/img/header-img.svg"
 import { useState, useEffect } from 'react'
 
 
