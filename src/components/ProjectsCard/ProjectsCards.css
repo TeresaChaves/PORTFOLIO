@@ -163,3 +163,62 @@
 .cssbuttons-io:active {
     transform: scale(0.95);
 }
+
+
+
+.button2 {
+    --color: #c88dad;
+    margin: 10px;
+    padding: 1em 4em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 8px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+}
+
+.button2::before,
+.button2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+
+.button2::before {
+    top: -1em;
+    left: -1em;
+}
+
+.button2::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+
+.button:hover::before,
+.button2:hover::after {
+    height: 410px;
+    width: 410px;
+}
+
+.button2:hover {
+    color: rgb(10, 25, 30);
+}
+
+.button2:active {
+    filter: brightness(.8);
+}

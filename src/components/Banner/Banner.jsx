@@ -4,6 +4,11 @@ import { ArrowRightCircle } from "react-bootstrap-icons"
 import LottieComp from "../Lottie/Lottie"
 // import headerImg from "../../assets/img/header-img.svg"
 import { useState, useEffect } from 'react'
+import 'animate.css';
+import TrackVisibility from 'react-on-screen'
+import './Banner.css'
+
+
 
 
 
@@ -54,20 +59,49 @@ function Banner() {
 
     return (
         <section className="banner" id="home">
-            <Container>
+            <Container className="f1">
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">
+                        <TrackVisibility>
+                            {({ isVisible }) =>
+                                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                                    <span className="tagline">Bienvenid@ a mi portfolio</span>
+                                    <h1>{`Soy Web Developer`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                                </div>}
+
+
+                        </TrackVisibility>
+                    </Col>
+                    <Col xs={12} md={6} xl={5}>
+                        <TrackVisibility>
+                            {({ isVisible }) =>
+                                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                                    <LottieComp></LottieComp>
+                                </div>}
+                        </TrackVisibility>
+
+
+
+
+
+
+
+
+
+
+                        {/* <span className="tagline">
                             Bienvenid@ a mi Porfolio
                         </span>
                         <h1>{`Soy Web Developer`} <span className="wrap">{text}</span></h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia natus est eveniet atque, dolore aliquid inventore eum enim sed laborum aspernatur asperiores veritatis officiis impedit, obcaecati corrupti, blanditiis nulla possimus.
                         </p>
-                        <button onClick={() => console.log('conect')}>Conecta<ArrowRightCircle size={25}></ArrowRightCircle></button>
-                    </Col>
+                        <button onClick={() => console.log('conect')}>Conecta<ArrowRightCircle size={25}></ArrowRightCircle></button> */}
+                        {/* </Col>
                     <Col xs={12} md={6} xl={5}>
                         {/* <img src={headerImg} alt="Header"></img> */}
-                        <LottieComp></LottieComp>
+                        {/* <LottieComp></LottieComp> */}
 
                     </Col>
                 </Row>
