@@ -6,7 +6,6 @@ import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Project';
 import AppRoutes from './routes/AppRoutes';
 
-
 function App() {
   return (
     <div>
@@ -16,10 +15,7 @@ function App() {
       <Skills></Skills>
       <Projects></Projects>
 
-
     </div>
-
-
 
   );
 }

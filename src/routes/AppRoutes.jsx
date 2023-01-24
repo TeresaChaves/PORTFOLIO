@@ -8,10 +8,9 @@ function AppRoutes() {
     return (
         <Routes>
             <Route>
-                <Route path='/banner' element={<Banner />} />
-                <Route path='/skills' element={<Skills />} />
-                <Route path='/projects' element={<Projects />} />
-
+                <Route exact path='/banner' element={<Banner />} />
+                <Route exact path='/skills' element={<Skills />} />
+                <Route exact path='/projects' element={<Projects />} />
             </Route>
 
         </Routes>
