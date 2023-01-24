@@ -33,7 +33,7 @@ function Projects() {
             description: "Express || API IMDB Google Maps || Javascript || HTML || CSS ",
             imgUrl: projImg2,
             url: "https://geofilm.fly.dev/",
-            git: "https://github.com/TeresaChaves/BDT-client"
+            git: "https://github.com/gonzalodeveloper/geofilm"
         },
         {
             title: "Eternal Joaquin",
@@ -94,7 +94,7 @@ function Projects() {
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <h2>Projects</h2>
-                                    <p className="pp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <p className="pp">Y estos son los culpables de que me haya enamorado del Desarrollo Web. Cada uno de ellos me ha enseñado algo, a intentar crear un mundo más colaborativo, a rendir tributo al mejor jugador del mundo, a unir mis dos mundos y todo gracias al código. ¿A quién no le va a gustar? </p>
                                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                                         {/* <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                             <Nav.Item>

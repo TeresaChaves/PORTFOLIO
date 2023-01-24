@@ -1,6 +1,7 @@
 
 import { Col, Container, Row } from "react-bootstrap"
-import { ArrowRightCircle } from "react-bootstrap-icons"
+import { Phone } from "react-bootstrap-icons"
+
 import LottieComp from "../Lottie/Lottie"
 // import headerImg from "../../assets/img/header-img.svg"
 import { useState, useEffect } from 'react'
@@ -65,10 +66,12 @@ function Banner() {
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                                    <span className="tagline">Bienvenid@ a mi portfolio</span>
+                                    <span className="tagline">Teresa Chaves</span>
                                     <h1>{`Soy Web Developer`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                    <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                                    <p>¿Quieres que la persona más simpática de Madrid trabaje en tu empresa? 💩</p>  <p>Me gusta aprender más que comer coquinas en Huelva. Tengo la Licenciatura de trabajar en equipo haciéndote sentir a gusto y sacando lo mejor de todos, el Doctorado en trabajar bajo presión dando lo mejor de mí y el Postgrado en que se me ocurran las ideas más locas con las bases más sólidas y el Master del Universo en hacerte reir en las comidas.</p> <p> Después de 17 años de editora de televisión estudié en Ironhack FullStack Web Developer y me puse a picar código y no he conseguido parar, me entusiasma todo lo que me queda por aprender y me enorgullece lo que llevo aprendido.</p> <p>Soy tan valiente que he puesto el icono de la caca en mi portfolio.</p> <p>Si después de eso no me llamas no tengo nada que hacer.</p>
+
+
+                                    <button><Phone size={25} />600700231 </button>
                                 </div>}
 
 

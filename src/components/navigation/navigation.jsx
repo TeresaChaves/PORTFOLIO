@@ -6,6 +6,8 @@ import navIcon2 from '../../assets/img/icons8-github.svg'
 import navIcon3 from '../../assets/img/nav-icon3.svg'
 import { useState, useEffect } from 'react'
 import logo from '../../assets/img/code-slash-svgrepo-com.svg'
+import { HashLink } from 'react-router-hash-link';
+
 
 function Navigation() {
 
@@ -50,7 +52,9 @@ function Navigation() {
                             <a href="https://github.com/TeresaChaves"><img src={navIcon2} alt="github" /></a>
                             <a href="https://www.instagram.com/teresachmz/"><img src={navIcon3} alt="instagram" /></a>
                         </div>
-                        <button className="vvd" onClick={() => console.log("conect")}><span>Let’s Connect</span></button>
+                        <a href={`mailto:ttachaves@hotmail.com`}>Email
+                            <button className="vvd"><span>Email</span></button>
+                        </a>
 
                     </span>
                 </Navbar.Collapse>
