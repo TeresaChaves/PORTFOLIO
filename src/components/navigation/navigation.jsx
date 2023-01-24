@@ -6,7 +6,9 @@ import navIcon2 from '../../assets/img/icons8-github.svg'
 import navIcon3 from '../../assets/img/nav-icon3.svg'
 import { useState, useEffect } from 'react'
 import logo from '../../assets/img/code-slash-svgrepo-com.svg'
-import { HashLink } from 'react-router-hash-link';
+import Banner from '../../components/Banner/Banner';
+import Skills from '../../components/Skills/Skills';
+import { Link } from 'react-router-dom'
 
 
 function Navigation() {
@@ -43,7 +45,7 @@ function Navigation() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
                         <Nav.Link href="/" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-                        <Nav.Link href="/skills" className={activeLink === 'link' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
+                        <Link as="div" to="/skills" className={activeLink === 'link' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Link>
                         <Nav.Link href="/projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
                     </Nav>
                     <span className="navbar-text">
