@@ -41,7 +41,10 @@ function Skills() {
                     <div className="col-12">
                         <div className="skill-bx wow zoomIn">
                             <h2>Skills</h2>
-                            <p>Si has estado en Ironhack sabes lo que es aprender cualquiera de estos en menos de 2 semanas. Te da la seguridad de enfrentarte a la programación como un reto, te enseña a aprender como nunca lo has hecho.</p> <p>HTML || CSS || Nodejs || Express || Reactjs || Typescript || Javascript</p>
+                            <p></p>
+                            {/* <p>Si has estado en Ironhack sabes lo que es aprender cualquiera de éstos en menos de 2 semanas.
+                                Te da la seguridad de enfrentarte a la programación como un reto, te enseña a aprender como nunca lo has hecho.</p> */}
+                            <p>HTML || CSS || Nodejs || Express || Reactjs || Typescript || Javascript</p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
                                     <img src={react} alt="Image" />
