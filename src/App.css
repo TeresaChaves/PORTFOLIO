@@ -50,19 +50,17 @@ h6 {
 }
 
 p,
-a,
+
 li,
 button,
 ul {
   margin: 0;
   padding: 0;
   line-height: normal;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
-a:hover {
-  text-decoration: none;
-}
+
 
 img {
   width: 60%;

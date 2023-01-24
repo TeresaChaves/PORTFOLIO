@@ -169,3 +169,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     border-color: transparent;
 }
+
+
+a {
+    all: unset;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-link {
+    padding: 10px;
+}

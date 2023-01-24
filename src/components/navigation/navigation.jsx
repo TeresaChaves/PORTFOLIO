@@ -9,6 +9,7 @@ import logo from '../../assets/img/code-slash-svgrepo-com.svg'
 import Banner from '../../components/Banner/Banner';
 import Skills from '../../components/Skills/Skills';
 import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 function Navigation() {
@@ -44,9 +45,9 @@ function Navigation() {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link href="/" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-                        <Link as="div" to="/skills" className={activeLink === 'link' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Link>
-                        <Nav.Link href="/projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+                        <NavLink to="/" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</NavLink>
+                        <NavLink to="/skills" className={activeLink === 'link' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')} >Skills</NavLink>
+                        <NavLink href="/projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</NavLink>
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
