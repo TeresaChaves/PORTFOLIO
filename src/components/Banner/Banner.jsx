@@ -66,11 +66,18 @@ function Banner() {
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                                    <span className="tagline">Teresa Chaves</span>
+                                    <span className="tagline">Teresa Chaves Maza</span>
                                     <h1>{`Soy Web Developer`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                                    <p>¿Quieres que la persona más simpática de Madrid trabaje en tu empresa? 💩</p>  <p>Me gusta aprender más que comer coquinas en Huelva. Tengo la Licenciatura de trabajar en equipo haciéndote sentir a gusto y sacando lo mejor de todos, el Doctorado en trabajar bajo presión dando lo mejor de mí y el Postgrado en que se me ocurran las ideas más locas con las bases más sólidas y el Master del Universo en hacerte reir en las comidas.</p> <p> Después de 17 años de editora de televisión estudié en Ironhack FullStack Web Developer y me puse a picar código y no he conseguido parar, me entusiasma todo lo que me queda por aprender y me enorgullece lo que llevo aprendido.</p> <p>Soy tan valiente que he puesto el icono de la caca en mi portfolio.</p> <p>Si después de eso no me llamas no tengo nada que hacer.</p>
-
-
+                                    <p>¿Quieres que la persona más simpática de Madrid trabaje en tu empresa? 💩</p>
+                                    <p>Me gusta aprender más que comer coquinas en Huelva. Tengo la Licenciatura de trabajar en equipo haciéndote sentir a gusto
+                                        y sacando lo mejor de todos, el Postgrado en trabajar bajo presión dando lo mejor de mí y el Doctorado en que se me ocurran
+                                        las ideas más locas con las bases más sólidas.</p>
+                                    {/* <p>Pero también tengo carreras un poco más homologadas <a href="https://drive.google.com/drive/u/0/folders/1Wf-Cs5tol11Nt0UqwIXzi3Jr_r1UD_0E">
+                                        <button className="button3">CV</button>
+                                    </a>
+                                    </p> */}
+                                    {/* <p> Después de 17 años de editora de televisión estudié en Ironhack FullStack Web Developer y me puse a picar código y no he conseguido parar.</p> */}
+                                    <p>Soy tan valiente que he puesto el icono de la caca en mi portfolio.</p>
                                     <button><Phone size={25} />600700231 </button>
                                 </div>}
 

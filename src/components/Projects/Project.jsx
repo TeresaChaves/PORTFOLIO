@@ -94,7 +94,9 @@ function Projects() {
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <h2>Projects</h2>
-                                    <p className="pp">Y estos son los culpables de que me haya enamorado del Desarrollo Web. Cada uno de ellos me ha enseñado algo, a intentar crear un mundo más colaborativo, a rendir tributo al mejor jugador del mundo, a unir mis dos mundos y todo gracias al código. ¿A quién no le va a gustar? </p>
+                                    <p className="pp">Y estos son los culpables de que me haya enamorado del Desarrollo Web. Cada uno de ellos me ha enseñado algo,
+                                        a intentar crear un mundo más colaborativo, a rendir tributo al mejor jugador del planeta, a unir mis dos pasiones, el cine y la programación
+                                        y todo gracias al código. ¿A quién no le va a gustar? </p>
                                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                                         {/* <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                             <Nav.Item>

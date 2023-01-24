@@ -38,7 +38,7 @@
     color: #fff;
     font-weight: 700;
     font-size: 20px;
-    margin-top: 60px;
+    margin-top: 10px;
     letter-spacing: 0.8px;
     display: flex;
     align-items: center;
@@ -134,4 +134,63 @@
 .card5:hover .card-button {
     transform: translate(-50%, 50%);
     opacity: 1;
+}
+
+
+
+.button3 {
+    --color: #c88dad;
+    padding: 0.5em 1em;
+    background-color: transparent;
+    margin-top: 0px;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 100;
+    font-size: 5px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+}
+
+.button3::before,
+.button3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+
+.button3::before {
+    top: -1em;
+    left: -1em;
+}
+
+.button3::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+
+.button3:hover::before,
+.button3:hover::after {
+    height: 410px;
+    width: 410px;
+}
+
+.button3:hover {
+    color: rgb(10, 25, 30);
+}
+
+.button3:active {
+    filter: brightness(.8);
 }

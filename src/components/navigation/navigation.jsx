@@ -52,7 +52,7 @@ function Navigation() {
                             <a href="https://github.com/TeresaChaves"><img src={navIcon2} alt="github" /></a>
                             <a href="https://www.instagram.com/teresachmz/"><img src={navIcon3} alt="instagram" /></a>
                         </div>
-                        <a href={`mailto:ttachaves@hotmail.com`}>Email
+                        <a href={`mailto:ttachaves@hotmail.com`}>
                             <button className="vvd"><span>Email</span></button>
                         </a>
 
