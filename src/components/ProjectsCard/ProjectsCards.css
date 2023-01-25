@@ -5,7 +5,7 @@
     --border-width: 4px;
     appearance: none;
     position: relative;
-    padding: 1em 2em;
+    padding: 1em 1em;
     border: 0;
     background: rgb(5, 5, 22);
     font-size: 18px;
@@ -169,15 +169,15 @@
 
 .button2 {
     --color: #e2e2e2;
-    margin: 10px;
-    padding: 1em 4em;
+    margin: 0px 20px 0px 0px;
+    padding: 1em 4em 1em;
     background-color: transparent;
     border-radius: .3em;
     position: relative;
     overflow: hidden;
     cursor: pointer;
     transition: .5s;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 8px;
     border: 1px solid;
     font-family: inherit;

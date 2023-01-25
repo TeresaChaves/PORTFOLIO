@@ -67,7 +67,7 @@ function Banner() {
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <span className="tagline">Teresa Chaves Maza</span>
-                                    <h1>{`Soy Web Developer`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                                    <h1>{`Soy Web Developer`}</h1> <h1> <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack", "Frontend", "Backend" ]'><span className="wrap">{text}</span></span></h1>
                                     <p>¿Quieres que la persona más simpática de Madrid trabaje en tu empresa? 💩</p>
                                     <p>Me gusta aprender más que comer coquinas en Huelva. Tengo la Licenciatura de trabajar en equipo haciéndote sentir a gusto
                                         y sacando lo mejor de todos, el Postgrado en trabajar bajo presión dando lo mejor de mí y el Doctorado en que se me ocurran

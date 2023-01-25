@@ -30,14 +30,14 @@ function Projects() {
         },
         {
             title: "Geofilm",
-            description: "Express || API IMDBGoogleMaps ||  HTML || CSS ",
+            description: "Express || API IMDBGoogleMaps  ",
             imgUrl: projImg2,
             url: "https://geofilm.fly.dev/",
             git: "https://github.com/gonzalodeveloper/geofilm"
         },
         {
             title: "Eternal Joaquin",
-            description: "Javascript || CanvasRenderingContext2D || || HTML || CSS  ",
+            description: "Javascript || CanvasRenderingContext2D ||   ",
             imgUrl: projImg3,
             url: "https://teresachaves.github.io/Zombie_Runner/",
             git: "https://github.com/TeresaChaves/Zombie_Runner"
@@ -69,7 +69,7 @@ function Projects() {
 
     return (
         <section className="project" id="project">
-            <Container>
+            <Container >
                 {/* <Row>
                     <Col size={12}>
                         <h2>Projects</h2>
