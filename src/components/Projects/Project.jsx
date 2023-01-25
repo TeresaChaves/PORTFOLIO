@@ -23,7 +23,7 @@ function Projects() {
     const projects = [
         {
             title: "TimeShare",
-            description: " React || Nodejs || Mongodb || Javascript || HTML || CSS ",
+            description: " React || Nodejs || Mongodb || Javascript || HTML || CSS  ",
             imgUrl: projImg1,
             url: "https://timeshare.netlify.app/",
             git: "https://github.com/TeresaChaves/BDT-client"
@@ -37,7 +37,7 @@ function Projects() {
         },
         {
             title: "Eternal Joaquin",
-            description: "Javascript || CanvasRenderingContext2D ||   ",
+            description: "Javascript || HTML || CSS || CanvasRenderingContext2D    ",
             imgUrl: projImg3,
             url: "https://teresachaves.github.io/Zombie_Runner/",
             git: "https://github.com/TeresaChaves/Zombie_Runner"
