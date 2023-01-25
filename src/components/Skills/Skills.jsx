@@ -1,11 +1,14 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import react from "../../assets/img/icons8-react-400.png"
-import javascript from "../../assets/img/icons8-javascript-144.png"
-import node from "../../assets/img/icons8-nodejs-144.png"
-import typescript from "../../assets/img/icons8-typescript-144.png"
-import html from "../../assets/img/icons8-html-filetype-100.png"
-import css from "../../assets/img/icons8-css3-100.png"
+import react from "../../assets/img/react-2.svg"
+import javascript from "../../assets/img/logo-javascript.svg"
+import node from "../../assets/img/nodejs-2.svg"
+import typescript from "../../assets/img/typescript.svg"
+import html from "../../assets/img/html-1.svg"
+import css from "../../assets/img/css-3.svg"
+import mongo from "../../assets/img/mongodb-icon-1.svg"
+
+
 import colorSharp from "../../assets/img/color-sharp.png"
 import './Skills.css'
 
@@ -16,11 +19,11 @@ function Skills() {
     const responsive = {
         superLargeDesktop: {
             breakpoint: { max: 4000, min: 3000 },
-            items: 5
+            items: 4
         },
         desktop: {
             breakpoint: { max: 1500, min: 1024 },
-            items: 5
+            items: 3
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
@@ -44,31 +47,35 @@ function Skills() {
                             <p></p>
                             {/* <p>Si has estado en Ironhack sabes lo que es aprender cualquiera de éstos en menos de 2 semanas.
                                 Te da la seguridad de enfrentarte a la programación como un reto, te enseña a aprender como nunca lo has hecho.</p> */}
-                            <p>HTML || CSS || Nodejs || Express || Reactjs || Typescript || Javascript</p>
+                            <p>HTML || CSS || Nodejs || Express || Reactjs || Typescript || Javascript || MongoDB</p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
                                     <img src={react} alt="Image" />
                                     <h5>React</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={node} alt="Image" />
+                                    <img src={node} alt="Image2" />
                                     <h5>NodeJs</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={javascript} alt="Image" />
+                                    <img src={javascript} alt="Image3" />
                                     <h5>JavaScript</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={typescript} alt="Image" />
+                                    <img src={typescript} alt="Image4" />
                                     <h5>TypeScript</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={html} alt="Image" />
+                                    <img src={html} alt="Image5" />
                                     <h5>HTML</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={css} alt="Image" />
+                                    <img src={css} alt="Image6" />
                                     <h5>CSS</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={mongo} alt="Image6" />
+                                    <h5>MongoDB</h5>
                                 </div>
                             </Carousel>
                         </div>

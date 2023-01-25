@@ -12,6 +12,7 @@ import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 
 
+
 function Navigation() {
 
     const [activeLink, setActiveLink] = useState('home')
@@ -36,6 +37,17 @@ function Navigation() {
     }
 
     return (
+
+
+
+
+
+
+
+
+
+
+
         <Navbar expand="md" className={scroll ? "scrolled" : ""} >
             <Container>
                 <Navbar.Brand href="/"><img src={logo} alt="Logo" />
@@ -58,11 +70,20 @@ function Navigation() {
                         <a href={`mailto:ttachaves@hotmail.com`}>
                             <button className="vvd"><span>Email</span></button>
                         </a>
-
                     </span>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
+
+
+
+
+
+
+
+
+
+
 
     )
 
