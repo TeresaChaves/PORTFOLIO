@@ -78,7 +78,7 @@ function Banner() {
                                     </p> */}
                                     {/* <p> Después de 17 años de editora de televisión estudié en Ironhack FullStack Web Developer y me puse a picar código y no he conseguido parar.</p> */}
                                     <p>Soy tan valiente que he puesto el icono de la caca en mi portfolio.</p>
-                                    <button><Phone size={25} />600700231 </button>
+                                    <button><Phone size={27} />600700231 </button>
                                 </div>}
 
 
