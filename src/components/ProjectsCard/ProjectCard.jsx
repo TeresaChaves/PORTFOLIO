@@ -35,7 +35,7 @@ function ProjectCard({ title, description, imgUrl, url, git, detail }) {
                 <div>
                     <a href={git}>
                         <button className="button2" >
-                            <span> Code</span>
+                            <span>Code</span>
                         </button>
                     </a>
                     {url ?
@@ -67,7 +67,7 @@ function ProjectCard({ title, description, imgUrl, url, git, detail }) {
                         :
                         <a >
 
-                            <button className="button2" onClick={openModal}>+</button>
+                            <button className="button2" onClick={openModal}>Más</button>
                             <Col>
                                 <Modal show={showModal} onHide={closeModal} >
                                     <Modal.Header closeButton>

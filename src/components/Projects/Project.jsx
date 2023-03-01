@@ -61,7 +61,7 @@ function Projects() {
 
         {
             title: "Credit Song",
-            description: "Javascript || HTML || CSS || Reactjs || Boostrap || LottieWeb ||    ",
+            description: "Javascript || HTML || CSS || Reactjs || Boostrap || LottieWeb || Jquery || ContexAPI  ",
             imgUrl: creditimage,
             git: "https://github.com/TeresaChaves",
             detail: "Actualmente me encuentro colaborando con la empresa CreditSong, desarrollando toda la parte del Frontend. CreditSong es una startup con sede en Barcelona y Dubai basada en la tecnología blockchain centrada en la industria musical."
@@ -77,6 +77,7 @@ function Projects() {
             title: "Eternal Joaquin",
             description: "Javascript || HTML || CSS || CanvasRenderingContext2D    ",
             imgUrl: projImg3,
+            detail: "Es un juego creado en Canvas y a través del lenguaje JavaScript. Es un divertido juego que hace que el famoso y querido jugador del Real Betis, Joaquín, se haga eterno y juegue siempre para el Betis, para ello tendrás que ir con tu Zombie comiéndote a todos los Joaquín que salgan y evitando las bombas, si consigues comerte a 10 Joaquín lo harás eterno y habrás superado el juego.",
             url: "https://teresachaves.github.io/Zombie_Runner/",
             git: "https://github.com/TeresaChaves/Zombie_Runner"
         },
@@ -228,6 +229,7 @@ function Projects() {
                                             {model && <button className='model-close-btn' onClick={() => closeModel()}>X</button>}
                                             <div className='video-container' onClick={() => openModel()}>
                                                 <p>{videos[index].nameVideo}</p>
+                                                <hr></hr>
                                                 <Video
                                                     style={{ width: '100%' }}
                                                     autoPlay={model}
