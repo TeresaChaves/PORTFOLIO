@@ -1,11 +1,20 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Modal } from 'react-bootstrap';
 import './ProjectsCards.css'
 import navIcon2 from '../../assets/img/icons8-github.svg'
+import ModalProjects from '../Modal/Modal'
+import { useState } from "react"
+
+function ProjectCard({ title, description, imgUrl, url, git, detail }) {
+
+    const [showModal, setShowModal] = useState(false)
+
+    const openModal = () => setShowModal(true)
+    const closeModal = () => setShowModal(false)
 
 
-function ProjectCard({ title, description, imgUrl, url, git }) {
+
     return (
 
 
@@ -29,77 +38,57 @@ function ProjectCard({ title, description, imgUrl, url, git }) {
                             <span> Code</span>
                         </button>
                     </a>
-                    <a href={url}>
-                        <button className="button2">
-                            <span>+</span>
-                        </button>
-                    </a>
+                    {url ?
+                        <span>
+                            <a href={url}>
+                                <button className="button2" >
+                                    <span>Web</span>
+                                </button>
+                            </a>
+                            <a>
+                                <button className="button3" onClick={openModal}>
+                                    <span>Detalles</span>
+                                </button>
+                                <Col>
+                                    <Modal show={showModal} onHide={closeModal} >
+                                        <Modal.Header closeButton>
+                                            <Modal.Title>Detalles de {title}</Modal.Title>
+                                        </Modal.Header>
+                                        <Modal.Body>
+                                            <p>{description}</p>
+                                            <p>{detail}</p>
+                                        </Modal.Body>
+                                    </Modal>
+                                </Col>
+                            </a>
+
+                        </span>
+
+                        :
+                        <a >
+
+                            <button className="button2" onClick={openModal}>+</button>
+                            <Col>
+                                <Modal show={showModal} onHide={closeModal} >
+                                    <Modal.Header closeButton>
+                                        <Modal.Title>Detalles de {title}</Modal.Title>
+                                    </Modal.Header>
+                                    <Modal.Body>
+                                        <p>{description}</p>
+                                        <p>{detail}</p>
+                                    </Modal.Body>
+                                </Modal>
+                            </Col>
+
+
+                        </a>
+
+                    }
                 </div>
 
             </Row>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-        // <Card style={{ width: '18rem' }}>
-        //     <Card.Img variant="top" src={imgUrl} />
-        //     <Card.Body>
-        //         <Card.Title>{title}</Card.Title>
-        //         <Card.Text>
-        //             {description}.
-        //         </Card.Text>
-        //         <Button variant="primary">Go somewhere</Button>
-        //     </Card.Body>
-        // </Card>
-
-
-
-
-
-
-
-        // <Row xs={1} md={2} className="g-4">
-        //     {Array.from({ length: 2 }).map((_, idx) => (
-        //         <Col>
-        //             <Card>
-        //                 <Card.Img variant="top" src={imgUrl} />
-        //                 <Card.Body>
-        //                     <Card.Title>{title}</Card.Title>
-        //                     <Card.Text>
-        //                         {description}
-        //                     </Card.Text>
-        //                 </Card.Body>
-        //             </Card>
-        //         </Col>
-        //     ))}
-        // </Row>
-
-
-
-        // <Row xs={6} md={2} className="g-4">
-
-        //     <Col>
-        //         <Card>
-        //             <Card.Img src={imgUrl} />
-        //             <Card.Body>
-        //                 <Card.Title>{title}</Card.Title>
-        //                 <Card.Text>
-        //                     {description}
-        //                 </Card.Text>
-        //             </Card.Body>
-        //         </Card>
-        //     </Col>
-
-        // </Row>
 
 
     );
