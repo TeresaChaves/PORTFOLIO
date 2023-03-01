@@ -24,13 +24,10 @@ function ProjectCard({ title, description, imgUrl, url, git, detail }) {
             <div class="card-details">
                 <img className="imgcard" src={imgUrl} alt="image" />
                 <p class="text-title">{title}</p>
+                <hr />
                 <p class="text-body">{description}</p>
             </div>
             <Row>
-
-                {/* <div className="social-icon">
-                    <a href="https://github.com/TeresaChaves"><img src={navIcon2} alt="github" /></a>
-                </div> */}
 
                 <div>
                     <a href={git}>
