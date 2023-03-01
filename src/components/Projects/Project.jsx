@@ -61,7 +61,7 @@ function Projects() {
 
         {
             title: "Credit Song",
-            description: "Javascript || HTML || CSS || React   ",
+            description: "Javascript || HTML || CSS || Reactjs || Boostrap || LottieWeb ||    ",
             imgUrl: creditimage,
             git: "https://github.com/TeresaChaves",
             detail: "Actualmente me encuentro colaborando con la empresa CreditSong, desarrollando toda la parte del Frontend. CreditSong es una startup con sede en Barcelona y Dubai basada en la tecnología blockchain centrada en la industria musical."

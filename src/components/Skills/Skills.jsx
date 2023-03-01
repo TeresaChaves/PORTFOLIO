@@ -45,8 +45,10 @@ function Skills() {
                         <div className="skill-bx wow zoomIn">
                             <h2>Skills</h2>
                             <p></p>
-                            <p>Si has estado en IRONHACK sabes lo que es aprender cualquiera de éstos en menos de 2 semanas.
-                                Te da la seguridad de enfrentarte a la programación como un reto, te enseña a aprender como nunca lo has hecho.</p>
+                            <p>Después de un año formandome de manera autodidacta
+                                decidí terminar mi formación en una de las mejores escuelas y más exigentes
+                                a nivel nacional, IRONHACK.
+                            </p>
                             <p>HTML || CSS || Nodejs || Express || Reactjs || Typescript || Javascript || MongoDB || Socket.io</p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
