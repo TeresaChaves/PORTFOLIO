@@ -31,7 +31,7 @@ function ProjectCard({ title, description, imgUrl, url, git }) {
                     </a>
                     <a href={url}>
                         <button className="button2">
-                            <span>Web</span>
+                            <span>+</span>
                         </button>
                     </a>
                 </div>

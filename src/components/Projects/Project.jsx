@@ -13,6 +13,13 @@ import { Fullscreen } from 'react-bootstrap-icons'
 import React, { useState, createRef } from 'react'
 import TrackVisibility from 'react-on-screen'
 import colorSharp2 from '../../assets/img/color-sharp2.png'
+import messenger from '../../assets/img/Messenger.jpeg'
+import messegerVideo from '../../assets/animations/MessengerAlive.mp4'
+import creditsong from '../../assets/animations/CREDITSONGDEMO.mp4'
+import creditimage from '../../assets/img/Creditimage.jpeg'
+
+
+
 
 
 
@@ -42,6 +49,18 @@ function Projects() {
             url: "https://teresachaves.github.io/Zombie_Runner/",
             git: "https://github.com/TeresaChaves/Zombie_Runner"
         },
+        {
+            title: "Messenger is Alive",
+            description: "Javascript || HTML || CSS || Socket.io   ",
+            imgUrl: messenger,
+            git: "https://github.com/TeresaChaves/Chat_Shocketio"
+        },
+        {
+            title: "Credit Song",
+            description: "Javascript || HTML || CSS || React   ",
+            imgUrl: creditimage,
+            git: "https://github.com/TeresaChaves"
+        },
 
 
     ];
@@ -61,7 +80,18 @@ function Projects() {
             id: 3,
             poster: projImg3,
             videoUri: joaquin
-        }
+        },
+        {
+            id: 4,
+            poster: messenger,
+            videoUri: messegerVideo
+        },
+        {
+            id: 5,
+            poster: creditimage,
+            videoUri: creditsong
+        },
+
 
     ]
 
@@ -98,9 +128,10 @@ function Projects() {
                                         a intentar crear un mundo más colaborativo, a rendir tributo al mejor jugador del planeta, a unir mis dos pasiones, el cine y la programación
                                         y todo gracias al código. ¿A quién no le va a gustar? </p> */}
                                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                                        {/* <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                                        <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                             <Nav.Item>
                                                 <Nav.Link eventKey="first">Tab 1</Nav.Link>
+
                                             </Nav.Item>
                                             <Nav.Item>
                                                 <Nav.Link eventKey="second">Tab 2</Nav.Link>
@@ -108,8 +139,8 @@ function Projects() {
                                             <Nav.Item>
                                                 <Nav.Link eventKey="third">Tab 3</Nav.Link>
                                             </Nav.Item>
-                                        </Nav> */}
-                                        <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                                        </Nav>
+                                        <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}> */}
                                             <Tab.Pane eventKey="first">
                                                 <Row>
                                                     {
