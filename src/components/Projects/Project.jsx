@@ -15,8 +15,8 @@ import TrackVisibility from 'react-on-screen'
 import colorSharp2 from '../../assets/img/color-sharp2.png'
 import messenger from '../../assets/img/Messenger.jpeg'
 import messegerVideo from '../../assets/animations/MessengerAlive.mp4'
-import creditsong from '../../assets/animations/CREDITSONGDEMO.mp4'
-import creditimage from '../../assets/img/Creditimage.jpeg'
+import creditsong from '../../assets/animations/CR2v.mp4'
+import creditimage from '../../assets/img/Credit2.jpg'
 
 
 

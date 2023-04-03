@@ -13,7 +13,7 @@ nav.navbar.scrolled {
 }
 
 nav.navbar a.navbar-brand {
-    width: 9%;
+    width: 8%;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -181,5 +181,11 @@ a:hover {
 }
 
 .navbar-link {
-    padding: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    font-size: 25px;
+}
+
+.navbar-link:hover {
+    transform: scale(1.2);
 }
