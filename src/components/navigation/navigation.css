@@ -183,7 +183,7 @@ a:hover {
 .navbar-link {
     padding: 20px;
     transition: transform 0.3s ease;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .navbar-link:hover {
