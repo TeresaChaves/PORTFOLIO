@@ -65,7 +65,7 @@ function Navigation() {
                         <div className="social-icon">
                             <a href="https://www.linkedin.com/in/teresachavesmaza/"><img src={navIcon1} alt="linkedin" /></a>
                             <a href="https://github.com/TeresaChaves"><img src={navIcon2} alt="github" /></a>
-                            <a href="https://drive.google.com/file/d/1lQ4GueCZg6HI1ExYGyUOQtVQIrM9sJYx/view?usp=sharing"><img src={navIcon3} alt="instagram" /></a>
+                            <a href="https://drive.google.com/file/d/1lLhdxkTgHNE5IbxVMPr1AmWOImvTFQ63/view?usp=sharing"><img src={navIcon3} alt="instagram" /></a>
                         </div>
                         <a href={`mailto:ttachaves@hotmail.com`}>
                             <button className="vvd"><span>Email</span></button>

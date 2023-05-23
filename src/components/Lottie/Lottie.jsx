@@ -1,6 +1,6 @@
 import lottie from "lottie-web";
 import React, { useEffect, createRef } from "react";
-import animation from '../../assets/animations/39702-work-space.json'
+import animation from '../../assets/animations/126196-jansmavip-html-and-coding-pages.json'
 import './Lottie.css'
 
 
