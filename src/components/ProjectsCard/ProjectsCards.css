@@ -49,7 +49,7 @@
 }
 
 .modal-content {
-  background-color: #be2c64;
+  background-color: #7c275e;
 }
 
 .card:hover::after {
@@ -222,7 +222,6 @@
 
 .button3 {
   --color: #e2e2e2;
-  margin: 30px 30px 0px 0px;
   background-color: transparent;
   border-radius: 0.3em;
   position: relative;

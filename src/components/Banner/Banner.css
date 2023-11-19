@@ -12,8 +12,8 @@
   padding: 8px 10px;
   background: linear-gradient(
     90.21deg,
-    rgba(43, 224, 7, 0.5) -5.91%,
-    rgba(246, 3, 3, 0.5) 111.58%
+    rgba(72, 3, 68, 0.5) -5.91%,
+    rgba(246, 3, 153, 0.5) 111.58%
   );
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
@@ -64,6 +64,11 @@
   justify-content: space-between;
   border-radius: 5px;
 }
+.milottie {
+  width: 500px;
+  height: 250px;
+  margin-top: 10px;
+}
 .span-name {
   color: rgb(209, 154, 191);
   font-weight: 900;
@@ -81,7 +86,7 @@
   color: #fff;
   font-weight: 700;
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 40px;
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
@@ -89,7 +94,6 @@
 
 .banner button svg {
   font-size: 25px;
-  margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
 }

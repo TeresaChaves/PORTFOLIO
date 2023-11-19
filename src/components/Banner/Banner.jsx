@@ -115,102 +115,98 @@ function Banner() {
                     ocurran las ideas más locas con las bases más sólidas.{" "}
                   </p>
                   <p>
-                    Pero también tengo carreras un poco más homologadas{" "}
+                    Pero también tengo carreras un poco más homologadas.{" "}
                     {/* <a href="https://drive.google.com/drive/u/0/folders/1Wf-Cs5tol11Nt0UqwIXzi3Jr_r1UD_0E"> */}
                     <div className="botones-experiencia">
                       <button className="button3" onClick={handleShow}>
                         CV
                       </button>
-                      <Col>
-                        <Modal show={showModal} onHide={handleClose}>
-                          <Modal.Header closeButton>
-                            <Modal.Title>Formación académica</Modal.Title>
-                          </Modal.Header>
-                          <Modal.Body>
-                            <div className="fecha-trabajo2">
-                              <span className="span-name">
-                                Full Stack Web Developer{" "}
-                              </span>
-                              <span>2021</span>
-                            </div>
-                            <p>IRONHACK</p>
-                            <div className="fecha-trabajo2">
-                              <span className="span-name">
-                                Postgrado en Postproducción y Edición de Cine
-                              </span>
-                              <span>2008</span>
-                            </div>
-                            <p>Escuela TAI</p>
-                            <div className="fecha-trabajo2">
-                              <span className="span-name">
-                                Realización de Audiovisuales y Espectáculos
-                              </span>
-                              <span>2003</span>
-                            </div>
-                            <p>ESAMA</p>
-                            <div className="fecha-trabajo2">
-                              <span className="span-name">
-                                Diplomatura en Trabajo Social
-                              </span>
-                              <span>2000</span>
-                            </div>
-                            <p>UNIVERSIDAD PABLO DE OLAVIDE</p>
-                          </Modal.Body>
-                        </Modal>
-                      </Col>
+                      <Modal show={showModal} onHide={handleClose}>
+                        <Modal.Header closeButton>
+                          <Modal.Title>Formación académica</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>
+                          <div className="fecha-trabajo2">
+                            <span className="span-name">
+                              Full Stack Web Developer{" "}
+                            </span>
+                            <span>2021</span>
+                          </div>
+                          <p>IRONHACK</p>
+                          <div className="fecha-trabajo2">
+                            <span className="span-name">
+                              Postgrado en Postproducción y Edición de Cine
+                            </span>
+                            <span>2008</span>
+                          </div>
+                          <p>Escuela TAI</p>
+                          <div className="fecha-trabajo2">
+                            <span className="span-name">
+                              Realización de Audiovisuales y Espectáculos
+                            </span>
+                            <span>2003</span>
+                          </div>
+                          <p>ESAMA</p>
+                          <div className="fecha-trabajo2">
+                            <span className="span-name">
+                              Diplomatura en Trabajo Social
+                            </span>
+                            <span>2000</span>
+                          </div>
+                          <p>UNIVERSIDAD PABLO DE OLAVIDE</p>
+                        </Modal.Body>
+                      </Modal>
                       <button className="button3" onClick={handleShow2}>
                         EXPERIENCIA PROFESIONAL
                       </button>
-                      <Col>
-                        <Modal show={showModal2} onHide={handleClose2}>
-                          <Modal.Header closeButton>
-                            <Modal.Title>Experiencia Profesional</Modal.Title>
-                          </Modal.Header>
-                          <Modal.Body>
-                            <div className="fecha-trabajo">
-                              <span className="span-name">OSOIGO NEXT</span>
-                              <span>2023</span>
-                            </div>
-                            <p>
-                              Desarrollo y diseño de los proyectos desarrollados
-                              dentro de Osoigo, consultoría de participación
-                              para la administración pública y empresas,
-                              Implementación de la accesibilidad bajo criterios
-                              WCAG. Frontend y diseño de la sección de
-                              participaciones de la web de RTVE.
-                            </p>
+                      <Modal show={showModal2} onHide={handleClose2}>
+                        <Modal.Header closeButton>
+                          <Modal.Title>Experiencia Profesional</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>
+                          <div className="fecha-trabajo">
+                            <span className="span-name">OSOIGO NEXT</span>
+                            <span>2023</span>
+                          </div>
+                          <p>
+                            Desarrollo y diseño de los proyectos desarrollados
+                            dentro de Osoigo, consultoría de participación para
+                            la administración pública y empresas, Implementación
+                            de la accesibilidad bajo criterios WCAG. Frontend y
+                            diseño de la sección de participaciones de la web de
+                            RTVE.
+                          </p>
+                          <br />
+                          <div className="fecha-trabajo">
+                            <span className="span-name">CREDITSONG</span>
+                            <span>2022</span>
+                          </div>
+                          <p>
+                            Desarrollo de todo el frontend, conexión con web3
+                            api, maquetación y diseño.
                             <br />
-                            <div className="fecha-trabajo">
-                              <span className="span-name">CREDITSONG</span>
-                              <span>2022</span>
-                            </div>
-                            <p>
-                              Desarrollo de todo el frontend, conexión con web3
-                              api, maquetación y diseño.
-                              <br />
-                              <br />
-                            </p>
-                            <div className="fecha-trabajo">
-                              <span className="span-name">FREELANCE</span>
-                              <span>2021</span>
-                            </div>
-                            <p>
-                              <span className="name-secoundary">TimeShare</span>{" "}
-                              Desarrollo de una app que digitaliza los servicios
-                              de un banco de tiempo, utilizando las horas del
-                              usuario como moneda de cambio.
-                              <span className="name-secoundary">
-                                {" "}
-                                GeoFilm
-                              </span>{" "}
-                              Desarrollo de una app conectada con la api de
-                              google maps y la api de imbd para crear tu propia
-                              base de datos con las localizaciones de tus
-                              películas favoritas. Mongodb,
-                            </p>
-                          </Modal.Body>
-                        </Modal>
-                      </Col>
+                            <br />
+                          </p>
+                          <div className="fecha-trabajo">
+                            <span className="span-name">FREELANCE</span>
+                            <span>2021</span>
+                          </div>
+                          <p>
+                            <span className="name-secoundary">TimeShare</span>{" "}
+                            Desarrollo de una app que digitaliza los servicios
+                            de un banco de tiempo, utilizando las horas del
+                            usuario como moneda de cambio.
+                            <span className="name-secoundary">
+                              {" "}
+                              GeoFilm
+                            </span>{" "}
+                            Desarrollo de una app conectada con la api de google
+                            maps y la api de imbd para crear tu propia base de
+                            datos con las localizaciones de tus películas
+                            favoritas.
+                          </p>
+                        </Modal.Body>
+                      </Modal>
                     </div>
                     {/* </a> */}
                   </p>
