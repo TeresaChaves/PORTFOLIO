@@ -1,308 +1,276 @@
 .card {
-    width: 190px;
-    height: 320px;
-    --border-radius: 15px;
-    --border-width: 4px;
-    appearance: none;
-    position: relative;
-    padding: 1em 1em;
-    border: 0;
-    background: rgb(5, 5, 22);
-    font-size: 18px;
-    font-weight: 500;
-    color: #fff;
-    z-index: 2;
-    border-radius: 15px;
-    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-
-
+  width: 190px;
+  height: 320px;
+  --border-radius: 15px;
+  --border-width: 4px;
+  appearance: none;
+  position: relative;
+  padding: 1em 1em;
+  border: 0;
+  background: rgb(5, 5, 22);
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  z-index: 2;
+  border-radius: 15px;
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .card::after {
-    --m-i: linear-gradient(#000, #000);
-    --m-o: content-box, padding-box;
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    padding: var(--border-width);
-    border-radius: var(--border-radius);
-    background-image: conic-gradient(#488cfb,
-            #29dbbc,
-            #ddf505,
-            #ff9f0e,
-            #e440bb,
-            #655adc,
-            #488cfb);
-    -webkit-mask-image: var(--m-i), var(--m-i);
-    mask-image: var(--m-i), var(--m-i);
-    -webkit-mask-origin: var(--m-o);
-    mask-origin: var(--m-o);
-    -webkit-mask-clip: var(--m-o);
-    mask-composite: exclude;
-    -webkit-mask-composite: destination-out;
-    filter: hue-rotate(0);
-    animation: rotate-hue linear 500ms infinite;
-    animation-play-state: paused;
-
+  --m-i: linear-gradient(#000, #000);
+  --m-o: content-box, padding-box;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: var(--border-width);
+  border-radius: var(--border-radius);
+  background-image: conic-gradient(
+    #488cfb,
+    #29dbbc,
+    #ddf505,
+    #ff9f0e,
+    #e440bb,
+    #655adc,
+    #488cfb
+  );
+  -webkit-mask-image: var(--m-i), var(--m-i);
+  mask-image: var(--m-i), var(--m-i);
+  -webkit-mask-origin: var(--m-o);
+  mask-origin: var(--m-o);
+  -webkit-mask-clip: var(--m-o);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  filter: hue-rotate(0);
+  animation: rotate-hue linear 500ms infinite;
+  animation-play-state: paused;
 }
 
 .modal-content {
-    background-color: #be2c64;
+  background-color: #be2c64;
 }
 
-
-
 .card:hover::after {
-    animation-play-state: running;
+  animation-play-state: running;
 }
 
 @keyframes rotate-hue {
-    to {
-        filter: hue-rotate(1turn);
-    }
+  to {
+    filter: hue-rotate(1turn);
+  }
 }
 
 .card,
 .card::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .card:active {
-    --border-width: 5px;
+  --border-width: 5px;
 }
 
-
 .card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .card:hover .card__image img {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .card:hover .card__content {
-    transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .text-body {
-    color: rgb(134, 134, 134);
-    --bs-text-opacity: white;
+  color: rgb(134, 134, 134);
+  --bs-text-opacity: white;
 }
 
 /*Text*/
 .text-title {
-    padding-top: 10px;
-    font-size: 0.8em;
-    font-weight: bold;
-    background: white;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+  padding-top: 10px;
+  font-size: 0.8em;
+  font-weight: bold;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-
 
 .imgcard {
-    width: 50%;
-    border-radius: 10px;
-
+  width: 50%;
+  border-radius: 10px;
 }
 
-
-
 .cssbuttons-io {
-    position: relative;
-    width: 40%;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 10px;
-    letter-spacing: 0.05em;
-    color: white;
-    border: 1px solid rgb(247, 247, 247);
-    cursor: pointer;
-    overflow: hidden;
-    margin: 5px;
+  position: relative;
+  width: 40%;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  color: white;
+  border: 1px solid rgb(247, 247, 247);
+  cursor: pointer;
+  overflow: hidden;
+  margin: 5px;
 }
 
 .cssbuttons-io svg {
-    width: 1.2em;
-    height: 1.2em;
-    margin-right: 0.5em;
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
 }
 
 .cssbuttons-io span {
-    position: relative;
-    z-index: 10;
-    transition: color 0.4s;
-    display: inline-flex;
-    align-items: center;
-    padding: 0.8em 1.2em 0.8em 1.05em;
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
 }
 
 .cssbuttons-io::before,
 .cssbuttons-io::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .cssbuttons-io::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(252, 70, 100);
-    transform: translateX(-100%);
-    transition: all .3s;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(252, 70, 100);
+  transform: translateX(-100%);
+  transition: all 0.3s;
+  z-index: -1;
 }
 
 .cssbuttons-io:hover::before {
-    transform: translateX(0);
-    ;
+  transform: translateX(0);
 }
 
 .cssbuttons-io:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
-
-
 .button2 {
-    --color: #e2e2e2;
-    margin: 10px 18px -28px 0px;
-    padding: 1em 4em 1em;
-    background-color: transparent;
-    border-radius: .3em;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: .5s;
-    font-weight: 500;
-    font-size: 10px;
-    border: 1px solid;
-    font-family: inherit;
-    text-transform: uppercase;
-    color: var(--color);
-    z-index: 1;
+  --color: #e2e2e2;
+  margin: 10px 18px -28px 0px;
+  padding: 1em 4em 1em;
+  background-color: transparent;
+  border-radius: 0.3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 500;
+  font-size: 10px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
 }
 
 .button2::before,
 .button2::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 50px;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 50%;
-    z-index: -1;
-    background-color: var(--color);
-    transition: 1s ease;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
 }
 
 .button2::before {
-    top: -1em;
-    left: -1em;
+  top: -1em;
+  left: -1em;
 }
 
 .button2::after {
-    left: calc(100% + 1em);
-    top: calc(100% + 1em);
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
 }
 
 .button:hover::before,
 .button2:hover::after {
-    height: 410px;
-    width: 410px;
+  height: 410px;
+  width: 410px;
 }
 
 .button2:hover {
-    color: rgb(10, 25, 30);
+  color: rgb(10, 25, 30);
 }
 
 .button2:active {
-    filter: brightness(.8);
+  filter: brightness(0.8);
 }
 
-
-
-
-
-
-
 .button3 {
-    --color: #e2e2e2;
-    margin: 30px 30px 0px 0px;
-    padding: 1em 9.2em 1em;
-    background-color: transparent;
-    border-radius: .3em;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: .5s;
-    font-weight: 800;
-    font-size: 10px;
-    border: 1px solid;
-    font-family: inherit;
-    text-transform: uppercase;
-    color: var(--color);
-    z-index: 1;
+  --color: #e2e2e2;
+  margin: 30px 30px 0px 0px;
+  background-color: transparent;
+  border-radius: 0.3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 800;
+  font-size: 10px;
+  border: 1px solid;
+  font-family: inherit;
+  color: var(--color);
+  z-index: 1;
 }
 
 .button3::before,
 .button3::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 50px;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 50%;
-    z-index: -1;
-    background-color: var(--color);
-    transition: 1s ease;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
 }
 
 .button3::before {
-    top: -1em;
-    left: -1em;
+  top: -1em;
+  left: -1em;
 }
 
 .button3::after {
-    left: calc(100% + 1em);
-    top: calc(100% + 1em);
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
 }
 
 .button:hover::before,
 .button3:hover::after {
-    height: 410px;
-    width: 410px;
+  height: 410px;
+  width: 410px;
 }
 
 .button3:hover {
-    color: rgb(10, 25, 30);
+  color: rgb(10, 25, 30);
 }
 
 .button3:active {
-    filter: brightness(.8);
+  filter: brightness(0.8);
 }

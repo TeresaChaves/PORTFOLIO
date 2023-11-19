@@ -9,7 +9,7 @@ function ModalProjects() {
         <>
 
 
-            <h1>HOla que tal</h1>
+            <h1>Hola que tal</h1>
         </>
     );
 }
