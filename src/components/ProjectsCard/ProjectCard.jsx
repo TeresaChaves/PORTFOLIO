@@ -35,7 +35,7 @@ function ProjectCard({ title, description, imgUrl, url, git, detail }) {
                 </button>
               </a>
               <a>
-                <button className="button3" onClick={openModal}>
+                <button className="button2" onClick={openModal}>
                   <span>Detalles</span>
                 </button>
                 <Col>

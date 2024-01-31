@@ -1,18 +1,18 @@
 .card {
   width: 190px;
-  height: 320px;
-  --border-radius: 15px;
-  --border-width: 4px;
+  height: 310px;
+  --border-radius: 5px;
+  --border-width: 2px;
   appearance: none;
   position: relative;
-  padding: 1em 1em;
+  padding: 1.5em;
   border: 0;
   background: rgb(5, 5, 22);
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 200 !important;
   color: #fff;
   z-index: 2;
-  border-radius: 15px;
+  border-radius: 5px;
   transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
@@ -84,23 +84,27 @@
 }
 
 .text-body {
-  color: rgb(134, 134, 134);
+  color: rgb(134, 134, 134 0.5);
   --bs-text-opacity: white;
+  font-weight: 400 !important;
 }
 
 /*Text*/
 .text-title {
   padding-top: 10px;
-  font-size: 0.8em;
-  font-weight: bold;
+  font-size: 1em;
   background: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 200 !important;
 }
 
 .imgcard {
   width: 50%;
-  border-radius: 10px;
+  border-radius: 5px;
+  min-width: 250px;
+  max-height: 50px;
+  object-fit: cover;
 }
 
 .cssbuttons-io {
@@ -166,20 +170,22 @@
 .button2 {
   --color: #e2e2e2;
   margin: 10px 18px -28px 0px;
-  padding: 1em 4em 1em;
+  padding: 1em 2em 1em;
   background-color: transparent;
   border-radius: 0.3em;
   position: relative;
   overflow: hidden;
   cursor: pointer;
   transition: 0.5s;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 10px;
   border: 1px solid;
   font-family: inherit;
   text-transform: uppercase;
   color: var(--color);
   z-index: 1;
+  margin-bottom: 5px;
+  min-width: 100px;
 }
 
 .button2::before,
@@ -220,7 +226,7 @@
   filter: brightness(0.8);
 }
 
-.button3 {
+.button4 {
   --color: #e2e2e2;
   background-color: transparent;
   border-radius: 0.3em;

@@ -1,6 +1,6 @@
 import lottie from "lottie-web";
 import React, { useEffect, createRef } from "react";
-import animation from "../../assets/animations/39702-work-space.json";
+import animation from "../../assets/animations/4.json";
 import "./Lottie.css";
 
 function LottieComp() {
@@ -10,21 +10,26 @@ function LottieComp() {
     animationData: animation, // animation file!
     renderer: "svg",
     loop: true,
-    autoplay: false,
+    autoplay: true,
     repeat: false,
   });
   useEffect(() => {
     const anim = lottie.loadAnimation({
       container: animationContainer.current,
       renderer: "svg",
-      loop: false,
+      loop: true,
       autoplay: true,
       animationData: animation,
       repeat: false,
     });
     return () => anim.destroy(); // optional clean up for unmounting
   }, []);
-  return <div className="animation-container" ref={animationContainer} />;
+  return (
+    <div
+      className="animation-container lottie-filter "
+      ref={animationContainer}
+    />
+  );
 }
 
 export default LottieComp;

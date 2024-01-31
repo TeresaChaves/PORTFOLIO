@@ -20,7 +20,25 @@
   margin-bottom: 16px;
   display: inline-block;
 }
+.modal-backdrop.dark {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
+.lottie-filter {
+  filter: hue-rotate(280deg);
+  opacity: 0.5; /* Puedes ajustar el valor del ángulo según tu preferencia */
+}
+
+.dark-background {
+  position: fixed;
+  top: 150;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+  z-index: 999; /* Asegúrate de que esté por encima de otros elementos */
+  pointer-events: auto; /* Habilita eventos de puntero en este elemento */
+}
 .banner h1 {
   font-size: 65px;
   font-weight: 700;
@@ -186,7 +204,6 @@
   padding: 0.5em 1em;
   background-color: transparent;
   margin-top: 0px;
-  border-radius: 0.3em;
   position: relative;
   overflow: hidden;
   cursor: pointer;

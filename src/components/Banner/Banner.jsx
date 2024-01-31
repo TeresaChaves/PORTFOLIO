@@ -27,12 +27,23 @@ function Banner() {
 
   const [showModal, setShowModal] = useState(false);
   const [showModal2, setShowModal2] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const handleShow2 = () => setShowModal2(true);
   const handleClose2 = () => setShowModal2(false);
 
-  const handleShow = () => setShowModal(true);
-  const handleClose = () => setShowModal(false);
+  const handleShow = () => {
+    setShowModal(true);
+    setModalOpen(true);
+    document.body.setAttribute("aria-hidden", "true");
+    document.body.classList.add("dark-background");
+  };
+  const handleClose = () => {
+    setShowModal(false);
+    setModalOpen(false);
+    document.body.removeAttribute("aria-hidden");
+    document.body.classList.remove("dark-background");
+  };
 
   const period = 2000;
 
@@ -121,7 +132,13 @@ function Banner() {
                       <button className="button3" onClick={handleShow}>
                         CV
                       </button>
-                      <Modal show={showModal} onHide={handleClose}>
+                      <Modal
+                        show={showModal}
+                        onHide={handleClose}
+                        backdropClassName="dark-background"
+                        aria-modal="true"
+                        aria-hidden={!modalOpen}
+                      >
                         <Modal.Header closeButton>
                           <Modal.Title>Formación académica</Modal.Title>
                         </Modal.Header>
@@ -230,7 +247,7 @@ function Banner() {
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }
                 >
-                  <LottieComp></LottieComp>
+                  <LottieComp className="cambiar-color"></LottieComp>
                 </div>
               )}
             </TrackVisibility>
