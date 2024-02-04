@@ -308,7 +308,8 @@
     margin: 0 auto;
     border-radius: 3px;
     overflow: hidden;
-    width: 90%;
+    width: 80%;
+    background-color: rgba(90, 87, 87, 0.2);
   }
   .project .nav.nav-pills .nav-link.active {
     border-bottom: 0px solid rgba(255, 255, 255, 1);
