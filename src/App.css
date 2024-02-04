@@ -1,26 +1,23 @@
 @font-face {
   font-family: Centra;
-  src: url('./assets/font/CentraNo2-Bold.ttf');
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: Centra;
-  src: url('./assets/font/CentraNo2-Medium.ttf');
+  src: url("./assets/font/CentraNo2-Bold.ttf");
   font-weight: 500;
 }
 
 @font-face {
   font-family: Centra;
-  src: url('./assets/font/CentraNo2-Book.ttf');
-  font-weight: 400;
+  src: url("./assets/font/CentraNo2-Medium.ttf");
+}
+
+@font-face {
+  font-family: Centra;
+  src: url("./assets/font/CentraNo2-Book.ttf");
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 html {
@@ -29,13 +26,11 @@ html {
 }
 
 body {
-  font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
+  background-color: #000000 !important;
   color: #fff !important;
-  font-family: 'Centra', sans-serif !important;
-
+  font-family: "Centra", sans-serif !important;
 }
 
 h1,
@@ -50,7 +45,6 @@ h6 {
 }
 
 p,
-
 li,
 button,
 ul {
@@ -59,8 +53,6 @@ ul {
   line-height: normal;
   text-decoration: none !important;
 }
-
-
 
 img {
   width: 60%;
@@ -78,7 +70,7 @@ select:focus {
   outline: none;
 }
 
-@media (min-width:1700px) {
+@media (min-width: 1700px) {
   main .container {
     max-width: 100%;
     padding: 0 150px;
@@ -91,4 +83,11 @@ p.success {
 
 p.danger {
   color: red;
+}
+
+@media screen and (max-width: 767px) {
+  main .container {
+    max-width: 100%;
+    padding: 0px;
+  }
 }

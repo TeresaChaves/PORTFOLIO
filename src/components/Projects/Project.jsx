@@ -17,10 +17,43 @@ import messenger from "../../assets/img/Messenger.jpeg";
 import messegerVideo from "../../assets/animations/MessengerAlive.mp4";
 import creditsong from "../../assets/animations/CR2v.mp4";
 import creditimage from "../../assets/img/Credit2.jpg";
+import osoigo from "../../assets/img/osoigo.jpeg";
+import pablo from "../../assets/img/pablo.jpeg";
 
 function Projects() {
   const [model, setModel] = useState(false);
   const projects = [
+    {
+      title: "Osoigo",
+      url: "https://www.osoigo.com/",
+      description: "React || Figma || Express || Django || Node",
+      imgUrl: osoigo,
+      git: "https://github.com/TeresaChaves",
+      detail:
+        "Desarrolladora Front-end y UX-UI en Osoigo, creación y diseño de proyectos innovadores de participación ciudadana. Mi enfoque principal está en la implementación de soluciones tecnológicas utilizando React, así como en la conceptualización y diseño utilizando la plataforma Figma. Mi trabajo abarca desde la conexión con APIs hasta la implementación de medidas de accesibilidad para garantizar la inclusividad en todos los aspectos del desarrollo.",
+    },
+    {
+      title: "Credit Song",
+      url: "https://www.creditsong.com/",
+      description:
+        "Javascript || HTML || CSS || Reactjs || Boostrap || LottieWeb || Jquery || ContexAPI  ",
+      imgUrl: creditimage,
+      git: "https://github.com/TeresaChaves/ClienteBlock/tree/master",
+      detail:
+        "Desarrollo y diseño de toda la parte del Frontend. CreditSong es una startup con sede en Barcelona y Dubai basada en la tecnología blockchain centrada en la industria musical.",
+    },
+
+    {
+      title: "Escenógrafo-Arquitectura",
+      description: "React || Figma || CSS|| Node",
+      imgUrl: pablo,
+      git: "https://github.com/TeresaChaves",
+      detail:
+        "Desarrolladora Front-end y UX-UI del portfolio del escenógrafo Pablo Chaves, recien nominado a los premios MAX.  He desarrollado la plataforma usando React, así como en la conceptualización y diseño utilizando la plataforma Figma.",
+    },
+  ];
+
+  const projets2 = [
     {
       title: "TimeShare",
       description: " React || Nodejs || MongoDb || Javascript || HTML || CSS  ",
@@ -33,7 +66,7 @@ function Projects() {
     {
       title: "Geofilm",
       description:
-        "Express || API IMDB GoogleMaps || Javascript || HTML || CSS || Boostrap || MongoDb || Postman ",
+        "Express || Javascript || HTML || CSS || Boostrap || MongoDb || Postman ",
       imgUrl: projImg2,
       git: "https://github.com/gonzalodeveloper/geofilm",
       detail:
@@ -50,18 +83,6 @@ function Projects() {
         "He entrado en muchos detalles en la construcción de esta aplicación de chat para cubrir casi todos los escenarios posibles, tales como la posibilidad tanto de chat público como privado, notificación de unión de usuario al chat, usuario fuera de línea y usuario en línea, los nombres de usuario duplicados, mensajes de error, notificación de mensajes no leídos, chat privado con varios usuarios al mismo tiempo y mucho más.",
     },
   ];
-
-  const projets2 = [
-    {
-      title: "Credit Song",
-      description:
-        "Javascript || HTML || CSS || Reactjs || Boostrap || LottieWeb || Jquery || ContexAPI  ",
-      imgUrl: creditimage,
-      git: "https://github.com/TeresaChaves",
-      detail:
-        "Desarrollo y diseño de toda la parte del Frontend. CreditSong es una startup con sede en Barcelona y Dubai basada en la tecnología blockchain centrada en la industria musical.",
-    },
-  ];
   const projets3 = [
     {
       title: "Eternal Joaquin",
@@ -75,24 +96,24 @@ function Projects() {
   ];
 
   let videos = [
-    {
-      id: 1,
-      nameVideo: "TimeShare",
-      poster: projImg1,
-      videoUri: timeshare,
-    },
+    // {
+    //   id: 1,
+    //   nameVideo: "TimeShare",
+    //   poster: projImg1,
+    //   videoUri: timeshare,
+    // },
     {
       id: 2,
       poster: projImg2,
       nameVideo: "GeoFilm",
       videoUri: geofilm,
     },
-    {
-      id: 3,
-      poster: projImg3,
-      nameVideo: "EternalJoaquin",
-      videoUri: joaquin,
-    },
+    // {
+    //   id: 3,
+    //   poster: projImg3,
+    //   nameVideo: "EternalJoaquin",
+    //   videoUri: joaquin,
+    // },
     {
       id: 4,
       poster: messenger,
@@ -130,10 +151,10 @@ function Projects() {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Fullstack</Nav.Link>
+                        <Nav.Link eventKey="first">Frontend / UX-UI</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Frontend</Nav.Link>
+                        <Nav.Link eventKey="second">Fullstack</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="third">Games</Nav.Link>
@@ -180,8 +201,13 @@ function Projects() {
           <Row>
             <Col>
               <h2 className="texwebdemo" style={{ textAlign: "center" }}>
-                Demo
+                Demos
               </h2>
+              <p className="desc-demo">
+                Estos son algunos de mis trabajos que no están subidos a
+                producción pero podemos ver un pequeño ejemplo de cómo funcionan
+                en local.
+              </p>
               <div className="gallery">
                 {videos.map((item, index) => {
                   let divRef = createRef(null);
@@ -210,7 +236,7 @@ function Projects() {
                         className="video-container"
                         onClick={() => openModel()}
                       >
-                        <p>{videos[index].nameVideo}</p>
+                        <p className="title-video">{videos[index].nameVideo}</p>
                         <hr></hr>
                         <Video
                           style={{ width: "100%" }}

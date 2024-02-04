@@ -130,7 +130,7 @@ function Banner() {
                     {/* <a href="https://drive.google.com/drive/u/0/folders/1Wf-Cs5tol11Nt0UqwIXzi3Jr_r1UD_0E"> */}
                     <div className="botones-experiencia">
                       <button className="button3" onClick={handleShow}>
-                        CV
+                        Formación Académica
                       </button>
                       <Modal
                         show={showModal}
@@ -183,7 +183,7 @@ function Banner() {
                         <Modal.Body>
                           <div className="fecha-trabajo">
                             <span className="span-name">OSOIGO NEXT</span>
-                            <span>2023</span>
+                            <span>2023 / 2024</span>
                           </div>
                           <p>
                             Desarrollo y diseño de los proyectos desarrollados
@@ -195,12 +195,30 @@ function Banner() {
                           </p>
                           <br />
                           <div className="fecha-trabajo">
+                            <span className="span-name">
+                              PORTFOLIO ESCENÓGRAFO
+                            </span>
+                            <span>2024</span>
+                          </div>
+                          <p>
+                            Diseño y desarrollo en React y Figma del portfolio
+                            de Pablo Chaves, nominado a los Premios Max. Este
+                            proyecto representa la fusión de arte escénico e
+                            innovación tecnológica. La nominación de Pablo
+                            Chaves destaca el impacto visual y técnico de
+                            nuestra colaboración.
+                          </p>
+                          <br />
+                          <div className="fecha-trabajo">
                             <span className="span-name">CREDITSONG</span>
                             <span>2022</span>
                           </div>
                           <p>
-                            Desarrollo de todo el frontend, conexión con web3
-                            api, maquetación y diseño.
+                            Diseño y el frontend en React, conectando a la
+                            perfección los derechos de autor de las canciones
+                            con la blockchain. Participando de este viaje
+                            innovador en la intersección de la música y la
+                            tecnología. 🚀🎶
                             <br />
                             <br />
                           </p>

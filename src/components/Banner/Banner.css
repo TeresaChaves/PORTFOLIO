@@ -7,18 +7,18 @@
 }
 
 .banner .tagline {
-  font-weight: 700;
+  font-weight: 100 !important;
   letter-spacing: 0.8px;
-  padding: 8px 10px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     90.21deg,
     rgba(72, 3, 68, 0.5) -5.91%,
     rgba(246, 3, 153, 0.5) 111.58%
-  );
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  ); */
   font-size: 20px;
-  margin-bottom: 16px;
+  border-bottom: 1px solid #a619b3;
+  margin-bottom: 50px;
   display: inline-block;
+  font-size: 1.8rem;
 }
 .modal-backdrop.dark {
   background-color: rgba(0, 0, 0, 0.3);
@@ -40,9 +40,8 @@
   pointer-events: auto; /* Habilita eventos de puntero en este elemento */
 }
 .banner h1 {
-  font-size: 65px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
+  font-size: 22px;
+  font-weight: 200;
   line-height: 1;
   margin-bottom: 20px;
   display: block;
@@ -94,16 +93,14 @@
 
 .banner p {
   color: #b8b8b8;
-  font-size: 18px;
-  letter-spacing: 0.8px;
+  font-size: 16px;
   line-height: 1.5em;
-  width: 96%;
+  width: 100%;
 }
 
 .banner button {
   color: #fff;
   font-weight: 700;
-  font-size: 20px;
   margin-top: 40px;
   letter-spacing: 0.8px;
   display: flex;
@@ -178,10 +175,6 @@
   transition: 0.3s ease-out;
 }
 
-.text-body {
-  color: rgb(134, 134, 134);
-}
-
 /*Text*/
 .text-title {
   font-size: 1.5em;
@@ -203,18 +196,20 @@
   --color: #c88dad;
   padding: 0.5em 1em;
   background-color: transparent;
+  border-radius: 2px;
   margin-top: 0px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
   transition: 0.5s;
-  font-weight: 100;
+  font-weight: 100 !important;
   font-size: 5px;
   border: 1px solid;
   font-family: inherit;
   text-transform: uppercase;
   color: var(--color);
   z-index: 1;
+  font-size: 18px;
 }
 
 .button3::before,
