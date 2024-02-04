@@ -16,14 +16,19 @@ function Banner() {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = [
-    "Frontend",
-    "UX/UI",
     "Javascript",
     "React",
     "APIs",
     "SASS",
     "Node",
     "Figma",
+    "CSS",
+    "HTML",
+    "Git",
+    "MongoDB",
+    "Swagger",
+    "Express",
+    "Boostrap",
   ];
 
   const [showModal, setShowModal] = useState(false);
@@ -98,8 +103,9 @@ function Banner() {
                   }
                 >
                   <span className="tagline">Teresa Chaves Maza</span>
-                  <p>{` Web Developer`}</p> <h1>{` Frontend / UX-UI`}</h1>{" "}
-                  <h1>
+                  <p>{` Web Developer`}</p>{" "}
+                  <p className="cargo">{` Frontend / UX-UI`}</p>{" "}
+                  <h3 className="rotate-skills">
                     {" "}
                     <span
                       className="txt-rotate"
@@ -108,7 +114,7 @@ function Banner() {
                     >
                       <span className="wrap">{text}</span>
                     </span>
-                  </h1>
+                  </h3>
                   {/* <p>
                     ¿Quieres que la persona más simpática de Madrid trabaje en
                     tu empresa? 💩
