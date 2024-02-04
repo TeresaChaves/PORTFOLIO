@@ -26,7 +26,8 @@ function Projects() {
     {
       title: "Osoigo",
       url: "https://www.osoigo.com/",
-      description: "React || Figma || Express || Django || Node",
+      description:
+        "React || Figma || Express || Django || Node Javascript || Python || Swagger",
       imgUrl: osoigo,
       git: "https://github.com/TeresaChaves",
       detail:
@@ -36,7 +37,7 @@ function Projects() {
       title: "Credit Song",
       url: "https://www.creditsong.com/",
       description:
-        "Javascript || HTML || CSS || Reactjs || Boostrap || LottieWeb || Jquery || ContexAPI  ",
+        "Javascript || HTML || CSS || Reactjs || Boostrap || LottieWeb || Jquery || ContexAPI ",
       imgUrl: creditimage,
       git: "https://github.com/TeresaChaves/ClienteBlock/tree/master",
       detail:
@@ -45,7 +46,8 @@ function Projects() {
 
     {
       title: "Escenógrafo-Arquitectura",
-      description: "React || Figma || CSS|| Node",
+      description:
+        "React || Figma || CSS || Node || Javascript || Sass || HTML",
       imgUrl: pablo,
       git: "https://github.com/TeresaChaves",
       detail:
