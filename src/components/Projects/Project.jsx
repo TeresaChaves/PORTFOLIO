@@ -151,7 +151,7 @@ function Projects() {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Frontend / UX-UI</Nav.Link>
+                        <Nav.Link eventKey="first">Frontend</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="second">Fullstack</Nav.Link>

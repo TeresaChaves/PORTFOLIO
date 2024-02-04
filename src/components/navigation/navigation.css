@@ -189,3 +189,9 @@ a:hover {
 .navbar-link:hover {
   transform: scale(1.2);
 }
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    width: 15% !important;
+  }
+}

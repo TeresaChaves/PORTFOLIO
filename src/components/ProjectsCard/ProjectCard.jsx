@@ -16,6 +16,7 @@ function ProjectCard({ title, description, imgUrl, url, git, detail }) {
     <div class="card" style={{ width: "18rem" }}>
       <div class="card-details">
         <img className="imgcard" src={imgUrl} alt="image" />
+
         {url ? (
           <>
             <div className="container-title">
@@ -27,6 +28,7 @@ function ProjectCard({ title, description, imgUrl, url, git, detail }) {
               </a>
             </div>
             <hr />
+
             <div className="descrition-container">
               <p className="name-tec">Tecnologias:</p>
               <p class="text-body">{description}</p>
@@ -45,6 +47,7 @@ function ProjectCard({ title, description, imgUrl, url, git, detail }) {
           </>
         )}
       </div>
+
       <Row>
         <div>
           <div className="container-button">

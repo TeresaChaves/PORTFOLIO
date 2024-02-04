@@ -9,11 +9,11 @@
   font-weight: 200 !important;
   text-align: center;
   margin-bottom: 30px;
-  opacity: 0.2;
+  opacity: 0.8;
 }
 
 .project .pp {
-  color: #b8b8b8;
+  color: #e4e3e3;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -271,7 +271,8 @@
 
 @media screen and (max-width: 767px) {
   .project h2 {
-    font-size: 24px; /* Tamaño de fuente reducido para dispositivos más pequeños */
+    font-size: 24px;
+    color: #e4e3e3; /* Tamaño de fuente reducido para dispositivos más pequeños */
   }
 
   .project .nav.nav-pills .nav-link {
@@ -284,7 +285,7 @@
   }
 
   .desc-demo {
-    font-size: 12px;
+    font-size: 14px;
     width: 100%;
     padding: 10px; /* Tamaño de fuente reducido para dispositivos más pequeños */
   }
@@ -293,5 +294,23 @@
   }
   .skill {
     margin-top: 20px;
+  }
+  .project .nav.nav-pills .nav-link:hover {
+    color: #fff; /* Cambia el color del texto al pasar el ratón */
+    /* Cambia el gradiente de colores al pasar el ratón */
+  }
+  .project .nav.nav-pills .nav-link {
+    font-size: 14px;
+    padding: 10px 0; /* Ajuste del relleno para dispositivos más pequeños */
+  }
+
+  .project .nav.nav-pills {
+    margin: 0 auto;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 90%;
+  }
+  .project .nav.nav-pills .nav-link.active {
+    border-bottom: 0px solid rgba(255, 255, 255, 1);
   }
 }
