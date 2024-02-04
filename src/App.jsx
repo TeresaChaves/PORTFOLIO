@@ -5,6 +5,7 @@ import Banner from "./components/Banner/Banner";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Project";
 import AppRoutes from "./routes/AppRoutes";
+import Fotter from "./components/Footer/Footer";
 
 function App() {
   return (

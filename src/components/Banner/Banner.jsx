@@ -23,6 +23,7 @@ function Banner() {
     "APIs",
     "SASS",
     "Node",
+    "Figma",
   ];
 
   const [showModal, setShowModal] = useState(false);
@@ -97,7 +98,7 @@ function Banner() {
                   }
                 >
                   <span className="tagline">Teresa Chaves Maza</span>
-                  <h1>{`Soy Web Developer`}</h1>{" "}
+                  <p>{` Web Developer`}</p> <h1>{` Frontend / UX-UI`}</h1>{" "}
                   <h1>
                     {" "}
                     <span
@@ -118,14 +119,14 @@ function Banner() {
                     Ironhack FullStack Web Developer y me puse a picar código y
                     no he conseguido parar.
                   </p> */}
-                  <p>
+                  <p className="despcription-banner">
                     Me gusta aprender más que comer coquinas en Huelva. Tengo la
                     Licenciatura de trabajar en equipo haciéndote sentir a gusto
                     y sacando lo mejor de todos, el Postgrado en trabajar bajo
                     presión dando lo mejor de mí y el Doctorado en que se me
                     ocurran las ideas más locas con las bases más sólidas.{" "}
                   </p>
-                  <p>
+                  <p className="despcription-banner">
                     Pero también tengo carreras un poco más homologadas.{" "}
                     {/* <a href="https://drive.google.com/drive/u/0/folders/1Wf-Cs5tol11Nt0UqwIXzi3Jr_r1UD_0E"> */}
                     <div className="botones-experiencia">
