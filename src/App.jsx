@@ -15,6 +15,7 @@ function App() {
       <Banner></Banner>
       <Projects></Projects>
       <Skills></Skills>
+      <Fotter></Fotter>
     </div>
   );
 }
