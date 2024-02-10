@@ -78,7 +78,7 @@ function Navigation() {
                 <img src={navIcon1} alt="linkedin" />
               </a>
               <a href="https://github.com/TeresaChaves">
-                <img src={navIcon2} alt="github" />
+                <img className="git-img" src={navIcon2} alt="github" />
               </a>
               <a href="https://drive.google.com/file/d/1ei8YZkERleEdU5Bvia68OZUUWHk7cN_U/view?usp=sharing">
                 <img src={navIcon3} alt="instagram" />
@@ -86,7 +86,7 @@ function Navigation() {
             </div>
             <a href={`mailto:ttachaves@hotmail.com`}>
               <button className="vvd">
-                <span>Email</span>
+                <span>contacto</span>
               </button>
             </a>
           </span>
