@@ -212,4 +212,14 @@ a:hover {
   .navbar-brand {
     width: 15% !important;
   }
+  .navbar-link {
+    padding: 15px;
+    transition: transform 0.3s ease;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .navbar-link:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
 }
