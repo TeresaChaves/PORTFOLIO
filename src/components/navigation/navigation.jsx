@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./navigation.css";
 import navIcon1 from "../../assets/img/nav-icon1.svg";
 import navIcon2 from "../../assets/img/icons8-github.svg";
-import navIcon3 from "../../assets/img/icons8-resume-97.png";
+import navIcon3 from "../../assets/img/user-id-svgrepo-com.png";
 import { useState, useEffect } from "react";
 import logo from "../../assets/img/code-slash-svgrepo-com.svg";
 import Banner from "../../components/Banner/Banner";
@@ -78,14 +78,15 @@ function Navigation() {
                 <img src={navIcon1} alt="linkedin" />
               </a>
               <a href="https://github.com/TeresaChaves">
-                <img className="" src={navIcon2} alt="github" />
+                <img className="git-img" src={navIcon2} alt="github" />
               </a>
               <a href="https://drive.google.com/file/d/1ei8YZkERleEdU5Bvia68OZUUWHk7cN_U/view?usp=sharing">
-                <img src={navIcon3} alt="instagram" />
+                <img className="cv-img" src={navIcon3} alt="instagram" />
               </a>
             </div>
+            <div></div>
             <a href={`mailto:ttachaves@hotmail.com`}>
-              <button className="vvd">
+              <button className="contacto-nav">
                 <span>contacto</span>
               </button>
             </a>

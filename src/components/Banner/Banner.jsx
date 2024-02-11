@@ -8,6 +8,7 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 import "./Banner.css";
 import { Modal } from "react-bootstrap";
+import mail from "../../assets/img/ggg.png";
 import cv from "../../assets/img/cv.png";
 function Banner() {
   const [loopNum, setLoopNum] = useState(0);
@@ -192,7 +193,7 @@ function Banner() {
                             <span className="span-name">OSOIGO NEXT</span>
                             <span>2023 / 2024</span>
                           </div>
-                          <p>
+                          <p className="description-job">
                             Desarrollo y diseño de los proyectos desarrollados
                             dentro de Osoigo, consultoría de participación para
                             la administración pública y empresas, Implementación
@@ -203,11 +204,11 @@ function Banner() {
                           <br />
                           <div className="fecha-trabajo">
                             <span className="span-name">
-                              PORTFOLIO ESCENÓGRAFO
+                              PORTFOLIO/ESCENÓGRAFO
                             </span>
                             <span>2024</span>
                           </div>
-                          <p>
+                          <p className="description-job">
                             Diseño y desarrollo en React y Figma del portfolio
                             de Pablo Chaves, nominado a los Premios Max. Este
                             proyecto representa la fusión de arte escénico e
@@ -220,7 +221,7 @@ function Banner() {
                             <span className="span-name">CREDITSONG</span>
                             <span>2022</span>
                           </div>
-                          <p>
+                          <p className="description-job">
                             Diseño y el frontend en React, conectando a la
                             perfección los derechos de autor de las canciones
                             con la blockchain. Participando de este viaje
@@ -233,7 +234,7 @@ function Banner() {
                             <span className="span-name">FREELANCE</span>
                             <span>2021</span>
                           </div>
-                          <p>
+                          <p className="description-job">
                             <span className="name-secoundary">TimeShare</span>{" "}
                             Desarrollo de una app que digitaliza los servicios
                             de un banco de tiempo, utilizando las horas del
@@ -256,10 +257,18 @@ function Banner() {
                     Soy tan valiente que he puesto el icono de la caca en mi
                     portfolio.
                   </p> */}
-                  <button>
-                    <Phone size={28} />
-                    600700231{" "}
-                  </button>
+                  <div className="botones-experiencia">
+                    <button>
+                      <Phone size={28} />
+                      600700231{" "}
+                    </button>
+                    <a href={`mailto:ttachaves@hotmail.com`}>
+                      <div className="mail-banner">
+                        <img className="img-mail-footer" src={mail} alt="" />
+                        <span>ttachaves@hotmail.com</span>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               )}
             </TrackVisibility>

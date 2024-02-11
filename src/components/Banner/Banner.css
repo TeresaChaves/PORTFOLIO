@@ -94,7 +94,14 @@
 }
 .span-name {
   color: rgb(209, 154, 191);
-  font-weight: 900;
+}
+.description-job {
+  color: #f3f3f3;
+  font-size: 16px;
+  width: 100%;
+  padding-bottom: 10px;
+  font-weight: 400 !important;
+  opacity: 0.9;
 }
 
 .banner p {
@@ -108,6 +115,14 @@
   opacity: 0.7;
   font-weight: 200 !important;
   padding-bottom: 20px;
+}
+.modal-header {
+  background-color: #f0edef;
+  border-radius: 3px;
+}
+.modal-title {
+  color: #751a5f;
+  /* font-weight: 400 !important; */
 }
 
 .despcription-banner {
@@ -136,10 +151,17 @@
 .banner button:hover svg {
   margin-left: 25px;
 }
-
-.banner img {
-  animation: updown 3s linear infinite;
+.mail-banner {
+  font-weight: 700;
+  margin-top: 40px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  animation: none !important;
 }
+/* .banner img {
+  animation: updown 3s linear infinite;
+} */
 
 @keyframes updown {
   0% {
@@ -279,5 +301,8 @@
   }
   .banner .tagline {
     margin-bottom: 10px;
+  }
+  .mail-banner {
+    display: none;
   }
 }
