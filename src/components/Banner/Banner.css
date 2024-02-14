@@ -297,12 +297,16 @@
 @media screen and (max-width: 767px) {
   .banner {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
   }
   .banner .tagline {
     margin-bottom: 10px;
   }
   .mail-banner {
     display: none;
+  }
+  .lottie-filter {
+    filter: saturate(0);
+    opacity: 0.5;
   }
 }
