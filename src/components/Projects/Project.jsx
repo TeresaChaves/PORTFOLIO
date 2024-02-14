@@ -19,7 +19,7 @@ import creditsong from "../../assets/animations/CR2v.mp4";
 import creditimage from "../../assets/img/Credit2.jpg";
 import osoigo from "../../assets/img/osoigo.jpeg";
 import pablo from "../../assets/img/pablo.jpeg";
-import rayo from "../../assets/img/lineas.svg";
+import rayo from "../../assets/img/cmd.svg";
 import play from "../../assets/img/play2.svg";
 import subr from "../../assets/img/subrayado.svg";
 import trespuntos from "../../assets/img/ctrl.svg";
@@ -155,7 +155,7 @@ function Projects() {
                     <div className="container-title-portfolio">
                       <div className="left-section">
                         <img
-                          className="img-title-portofolio3"
+                          className="img-title-portofolio2"
                           src={rayo}
                           alt="rayo"
                         />
