@@ -19,9 +19,15 @@ import creditsong from "../../assets/animations/CR2v.mp4";
 import creditimage from "../../assets/img/Credit2.jpg";
 import osoigo from "../../assets/img/osoigo.jpeg";
 import pablo from "../../assets/img/pablo.jpeg";
+import rayo from "../../assets/img/lineas.svg";
+import play from "../../assets/img/play2.svg";
+import subr from "../../assets/img/subrayado.svg";
+import trespuntos from "../../assets/img/ctrl.svg";
+import pausa from "../../assets/img/pause.svg";
 
 function Projects() {
   const [model, setModel] = useState(false);
+
   const projects = [
     {
       title: "Osoigo",
@@ -142,11 +148,29 @@ function Projects() {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2 className="projectstext">Proyectos</h2>
                   {/* <p className="pp">Y estos son los culpables de que me haya enamorado del Desarrollo Web. Cada uno de ellos me ha enseñado algo,
                                         a intentar crear un mundo más colaborativo, a rendir tributo al mejor jugador del planeta, a unir mis dos pasiones, el cine y la programación
-                                        y todo gracias al código. ¿A quién no le va a gustar? </p> */}
+                                      y todo gracias al código. ¿A quién no le va a gustar? </p> */}
                   <Tab.Container id="npm start" defaultActiveKey="first">
+                    <div className="container-title-portfolio">
+                      <div className="left-section">
+                        <img
+                          className="img-title-portofolio2"
+                          src={rayo}
+                          alt="rayo"
+                        />
+                      </div>
+                      <div className="center-section">
+                        <h2 className="projectstext">PROYECTOS</h2>
+                      </div>
+                      <div className="right-section">
+                        <img
+                          className="img-title-portofolio2"
+                          src={trespuntos}
+                          alt="rayo"
+                        />
+                      </div>
+                    </div>
                     <Nav
                       variant="pills"
                       className="nav-pills mb-5 justify-content-center align-items-center"
@@ -199,17 +223,37 @@ function Projects() {
           </Col>
         </Row>
 
-        <section>
+        <section className="section-container">
           <Row>
             <Col>
-              <h2 className="texwebdemo" style={{ textAlign: "center" }}>
-                Demos
-              </h2>
-              <p className="desc-demo">
-                Estos son algunos de mis trabajos que no están subidos a
-                producción pero podemos ver un pequeño ejemplo de cómo funcionan
-                en local.
-              </p>
+              <div className="container-title-portfolio">
+                <div className="left-section">
+                  <img
+                    className="img-title-portofolio2"
+                    src={play}
+                    alt="rayo"
+                  />
+                </div>
+                <div className="center-section">
+                  <h2 className="projectstext">DEMOS</h2>
+                </div>
+                <div className="right-section">
+                  <img
+                    className="img-title-portofolio2"
+                    src={pausa}
+                    alt="rayo"
+                  />
+                </div>
+              </div>
+
+              <div className="container-title-portfolio">
+                {" "}
+                <p className="desc-demo">
+                  Estos son algunos de mis trabajos que no están subidos a
+                  producción pero podemos ver un pequeño ejemplo de cómo
+                  funcionan en local.
+                </p>
+              </div>
               <div className="gallery">
                 {videos.map((item, index) => {
                   let divRef = createRef(null);

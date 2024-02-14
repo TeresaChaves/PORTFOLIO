@@ -1,20 +1,19 @@
 .skill {
   padding: 0 0 50px 0;
   position: relative;
-  margin-top: 150px;
 }
 
 .skill-bx {
   border-radius: 5px;
   text-align: center;
-  padding: 60px 50px;
+
+  margin-bottom: 90px;
+  margin-top: 95px;
 }
 
 .skill h2 {
-  font-size: 50px;
   font-weight: 200 !important;
   text-align: center;
-  margin-bottom: 30px;
   opacity: 0.5;
 }
 
@@ -23,7 +22,10 @@
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin: 14px 0 75px 0;
+  margin: 14px 0 0px 0;
+}
+.skill-tec {
+  font-size: 14px !important;
 }
 
 .skill-slider {
@@ -42,6 +44,11 @@
   bottom: 0;
   width: 40%;
   z-index: -4;
+}
+.img-title-portofolio2 {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 767px) {
@@ -62,5 +69,18 @@
   .skill-bx {
     padding: 0px;
     padding-bottom: 40px;
+  }
+  .img-title-portofolio2 {
+    width: 60px;
+    height: 50px;
+  }
+  .container-title-portfolio {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 3px;
+    overflow: hidden;
+    justify-content: space-between;
   }
 }

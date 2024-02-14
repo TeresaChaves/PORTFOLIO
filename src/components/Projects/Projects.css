@@ -1,14 +1,13 @@
 /*Retro Style Card*/
 .project {
-  padding: 80px 0px;
+  padding: 100px 0px;
   position: relative;
 }
 
 .project h2 {
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 200 !important;
   text-align: center;
-  margin-bottom: 60px;
   opacity: 0.5;
 }
 
@@ -42,6 +41,45 @@
 .project .nav.nav-pills .nav-item {
   width: 33.33333%;
 }
+.container-title-portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72%;
+  margin: 0 auto;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.container-portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72%;
+  margin: 0 auto;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.img-title-portofolio {
+  width: 120px;
+  height: 150px;
+  margin-right: 10px;
+}
+
+.left-section {
+  flex: 0 0 auto; /* Para que no se expanda */
+}
+.center-section {
+  flex: 1; /* Para que ocupe el espacio restante */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.right-section {
+  flex: 0 0 auto;
+  /* width: 150px;  */
+}
 
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
@@ -59,12 +97,7 @@
   cursor: pointer;
 }
 .project .nav.nav-pills .nav-link:hover {
-  color: #fff; /* Cambia el color del texto al pasar el ratón */
-  background: linear-gradient(
-    45deg,
-    #a00d6f,
-    #410f9c
-  ); /* Cambia el gradiente de colores al pasar el ratón */
+  color: #a00d6f;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega un suave efecto de sombra */
 }
 .project .nav.nav-pills .nav-link::before {
@@ -168,14 +201,15 @@
 }
 
 .gallery {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-  -webkit-column-width: 33%;
-  -moz-column-width: 33%;
-  column-width: 33%;
-  padding: 0.8rem;
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 72%;
+  margin: 0 auto;
+  border-radius: 3px;
+  overflow: hidden;
+  gap: 15px;
 }
 
 .row {
@@ -185,10 +219,27 @@
 }
 
 .gallery .video {
-  -webkit-transition: all 350ms ease;
   transition: all 350 ms ease;
   cursor: pointer;
   margin-bottom: 12px;
+  min-width: 253px;
+  max-width: 309px;
+  min-height: 258px;
+  /* max-height: 291px; */
+}
+.video-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.rh5v-DefaultPlayer_component {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
 .galley .video:hover {
@@ -268,6 +319,9 @@
 .texwebdemo {
   margin-top: 60px;
 }
+.section-container {
+  margin-top: 120px;
+}
 
 @media screen and (max-width: 767px) {
   .project h2 {
@@ -287,7 +341,8 @@
   .desc-demo {
     font-size: 14px;
     width: 100%;
-    padding: 10px; /* Tamaño de fuente reducido para dispositivos más pequeños */
+    padding: 10px;
+    /* Tamaño de fuente reducido para dispositivos más pequeños */
   }
   .project {
     padding: 10px 0px;
@@ -315,12 +370,36 @@
     border-bottom: 0px solid rgba(255, 255, 255, 1);
   }
   .desc-demo {
-    margin-top: 20px;
     color: #b8b8b8;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
-    margin: 14px auto 30px auto;
+    margin: 0px auto 30px auto;
     text-align: center;
+  }
+  .img-title-portofolio {
+    width: 60px;
+    height: 67px;
+  }
+  .right-section {
+    width: 60px;
+  }
+  .container-title-portfolio {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    justify-content: space-between;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .gallery-video {
+    min-height: 228px;
   }
 }
