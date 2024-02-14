@@ -50,6 +50,11 @@
   height: 80px;
   margin-right: 10px;
 }
+.img-title-portofolio3 {
+  width: 60px;
+  height: 80px;
+  margin-right: 10px;
+}
 
 @media screen and (max-width: 767px) {
   .skill p {
@@ -82,5 +87,14 @@
     border-radius: 3px;
     overflow: hidden;
     justify-content: space-between;
+  }
+  .img-title-portofolio3 {
+    width: 60px;
+    height: 80px;
+    margin-right: 10px;
+  }
+  .img-title-portofolio3 {
+    width: 40px;
+    height: 80px;
   }
 }

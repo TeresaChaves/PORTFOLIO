@@ -155,7 +155,7 @@ function Projects() {
                     <div className="container-title-portfolio">
                       <div className="left-section">
                         <img
-                          className="img-title-portofolio2"
+                          className="img-title-portofolio3"
                           src={rayo}
                           alt="rayo"
                         />
