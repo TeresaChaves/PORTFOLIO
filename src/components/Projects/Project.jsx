@@ -55,6 +55,7 @@ function Projects() {
       description:
         "React || Figma || CSS || Node || Javascript || Sass || HTML",
       imgUrl: pablo,
+      url: "https://pablochaves.netlify.app",
       git: "https://github.com/TeresaChaves",
       detail:
         "Desarrolladora Front-end y UX-UI del portfolio del escenógrafo Pablo Chaves, recien nominado a los premios MAX.  He desarrollado la plataforma usando React, así como en la conceptualización y diseño utilizando la plataforma Figma.",

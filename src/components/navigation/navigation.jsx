@@ -6,9 +6,6 @@ import navIcon2 from "../../assets/img/icons8-github.svg";
 import navIcon3 from "../../assets/img/user-id-svgrepo-com.png";
 import { useState, useEffect } from "react";
 import logo from "../../assets/img/code-slash-svgrepo-com.svg";
-import Banner from "../../components/Banner/Banner";
-import Skills from "../../components/Skills/Skills";
-import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 function Navigation() {
@@ -42,6 +39,7 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
+
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <NavLink
