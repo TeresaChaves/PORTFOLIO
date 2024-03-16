@@ -78,7 +78,7 @@ function Navigation() {
               <a href="https://github.com/TeresaChaves">
                 <img className="git-img" src={navIcon2} alt="github" />
               </a>
-              <a href="https://drive.google.com/file/d/1ei8YZkERleEdU5Bvia68OZUUWHk7cN_U/view?usp=sharing">
+              <a href="https://drive.google.com/file/d/1rGIe9hWz1ktv4DP2ryqW-7i4qYsxdoNG/view?usp=sharing">
                 <img className="cv-img" src={navIcon3} alt="instagram" />
               </a>
             </div>
