@@ -21,7 +21,7 @@ function ProjectCard({ title, description, imgUrl, url, git, detail }) {
           <>
             <div className="container-title">
               <p class="text-title-porject">{title}</p>
-              <a href={url}>
+              <a href={url} target="_blank">
                 <button className="button4">
                   <span>Web</span>
                 </button>
