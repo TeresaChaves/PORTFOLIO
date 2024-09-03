@@ -24,6 +24,7 @@ import play from "../../assets/img/play2.svg";
 import subr from "../../assets/img/subrayado.svg";
 import trespuntos from "../../assets/img/ctrl.svg";
 import pausa from "../../assets/img/pause.svg";
+import cn from "../../pages/utils.js";
 
 function Projects() {
   const [model, setModel] = useState(false);

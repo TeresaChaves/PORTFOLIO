@@ -72,13 +72,19 @@ function Navigation() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/teresachavesmaza/">
+              <a
+                href="https://www.linkedin.com/in/teresachavesmaza/"
+                target="_blank"
+              >
                 <img src={navIcon1} alt="linkedin" />
               </a>
-              <a href="https://github.com/TeresaChaves">
+              <a href="https://github.com/TeresaChaves" target="_blank">
                 <img className="git-img" src={navIcon2} alt="github" />
               </a>
-              <a href="https://drive.google.com/file/d/1SP9MBATgKxTr2446zFdqCmZHfSKRMZou/view?usp=sharing">
+              <a
+                href="https://drive.google.com/file/d/10wUKwEVY2ctHqWMN6aEuh9J15tnoAsVf/view?usp=sharing"
+                target="_blank"
+              >
                 <img className="cv-img" src={navIcon3} alt="instagram" />
               </a>
             </div>

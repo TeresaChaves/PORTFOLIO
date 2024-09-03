@@ -103,7 +103,7 @@ function Banner() {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="tagline">Teresa Chaves Maza</span>
+                  <h1 className="tagline">Teresa Chaves Maza</h1>
                   <p>{` Web Developer`}</p>{" "}
                   <p className="cargo">{` Frontend / UX-UI`}</p>{" "}
                   <h3 className="rotate-skills">
