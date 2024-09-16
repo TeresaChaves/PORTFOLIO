@@ -1,4 +1,4 @@
-import "./Images.css"
+// import "./Images.css"
 
 
 function Images() {

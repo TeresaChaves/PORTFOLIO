@@ -17,7 +17,7 @@ import messenger from "../../assets/img/Messenger.jpeg";
 import messegerVideo from "../../assets/animations/MessengerAlive.mp4";
 import creditsong from "../../assets/animations/CR2v.mp4";
 import creditimage from "../../assets/img/Credit2.jpg";
-import osoigo from "../../assets/img/osoigo.jpeg";
+import osoigo from "../../assets/img/OSOIGONUEVO.png";
 import pablo from "../../assets/img/pablo.jpeg";
 import rayo from "../../assets/img/cmd.svg";
 import play from "../../assets/img/play2.svg";
@@ -32,7 +32,7 @@ function Projects() {
   const projects = [
     {
       title: "Osoigo",
-      url: "https://www.osoigo.com/",
+      url: "https://www.osoigonext.com/",
       description:
         "React || Figma || Express || Django || Node Javascript || Python || Swagger",
       imgUrl: osoigo,

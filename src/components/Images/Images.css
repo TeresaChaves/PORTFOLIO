@@ -45,7 +45,7 @@ html {
   overflow: auto;
 } */
 
-nav {
+/* nav {
   position: sticky;
   top: 0;
   left: 0;
@@ -60,17 +60,17 @@ nav {
   color: canvas;
   padding: 0 1rem;
   z-index: 3;
-}
+} */
 
-article {
+/* article {
   max-width: 100vw;
   height: 100vh;
   display: grid;
   grid-template-rows: calc(100vh - var(--info-size)) var(--info-size);
   view-timeline: --article;
-}
+} */
 
-.article__img {
+/* .article__img {
   position: sticky;
   top: 0;
   left: 0;
@@ -78,13 +78,13 @@ article {
   height: var(--info-size);
   animation: in-n-out both linear;
   animation-timeline: --article;
-}
+} */
 
-h2 {
+/* h2 {
   text-transform: uppercase;
   font-size: 2rem;
   margin: 0;
-}
+} */
 
 article img {
   object-fit: cover;
@@ -129,10 +129,10 @@ main {
 }
 
 
-
+/* 
 a:hover {
   background: hsl(0 0% 40%);
-}
+} */
 
 .article__info {
   background: canvas;
