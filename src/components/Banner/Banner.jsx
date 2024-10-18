@@ -120,12 +120,11 @@ function Banner() {
                     ¿Quieres que la persona más simpática de Madrid trabaje en
                     tu empresa? 💩
                   </p> */}
-                  {/* <p>
+                  <p>
                     {" "}
-                    Después de 17 años de editora de televisión estudié en
-                    Ironhack FullStack Web Developer y me puse a picar código y
-                    no he conseguido parar.
-                  </p> */}
+                    Frontend developer con más de <b>tres años</b> de
+                    experiencia en el sector tecnológico.
+                  </p>
                   <p className="despcription-banner">
                     Me gusta aprender más que comer coquinas en Huelva. Tengo la
                     Licenciatura de trabajar en equipo haciéndote sentir a gusto

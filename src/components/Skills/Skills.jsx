@@ -72,7 +72,7 @@ function Skills() {
                 <p className="skill-tec">
                   HTML || CSS || Nodejs || Express || Reactjs || Typescript ||
                   Javascript || MongoDB || Socket.io || SCSS || Bootstrap || Git
-                  || Swagger
+                  || Swagger || Postman ||  Netlify ||  Figma || Django
                 </p>
               </div>
               <Carousel
