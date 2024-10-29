@@ -57,7 +57,8 @@ function Projects() {
         "React || Figma || CSS || Node || Javascript || Sass || HTML ",
       imgUrl: pablo,
       url: "https://www.pablochaves.com/",
-      git: "https://github.com/TeresaChaves",
+      
+      figma:"https://www.figma.com/design/WfshEebQHhNB0xxb1ANE4c/Pablo-Chaves-Escen%C3%B3grafo?node-id=0-1&node-type=canvas&t=VP6bFBJ4tRgCXmBR-0",
       detail:
         "Desarrolladora Front-end y UX-UI del portfolio del escenógrafo Pablo Chaves, recien nominado a los premios MAX.  He desarrollado la plataforma usando React, así como en la conceptualización y diseño utilizando la plataforma Figma.",
     },

@@ -6,7 +6,7 @@ import navIcon2 from "../../assets/img/icons8-github.svg";
 import ModalProjects from "../Modal/Modal";
 import { useState } from "react";
 
-function ProjectCard({ title, description, imgUrl, url, git, detail }) {
+function ProjectCard({ title, description, imgUrl, url, git, detail, figma }) {
   const [showModal, setShowModal] = useState(false);
 
   const openModal = () => setShowModal(true);
@@ -51,11 +51,20 @@ function ProjectCard({ title, description, imgUrl, url, git, detail }) {
       <Row>
         <div>
           <div className="container-button">
-            <a href={git}>
-              <button className="button2">
-                <span>Code</span>
-              </button>
-            </a>
+            {figma ? (
+              <a href={figma} target="_blank">
+                <button className="button2">
+                  <span>Figma</span>
+                </button>
+              </a>
+            ) : (
+              <a href={git}>
+                <button className="button2">
+                  <span>Code</span>
+                </button>
+              </a>
+            )}
+          
             <a>
               <button className="button2" onClick={openModal}>
                 <span>Detalles</span>

@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { Phone } from "react-bootstrap-icons";
+import { Tv } from "react-bootstrap-icons";
 
 import LottieComp from "../Lottie/Lottie";
 // import headerImg from "../../assets/img/header-img.svg"
@@ -257,16 +258,19 @@ function Banner() {
                     portfolio.
                   </p> */}
                   <div className="botones-experiencia">
+                    <a
+                      href="https://vimeo.com/manage/videos/580786976"
+                      target="_blank"
+                    >
+                      <button>
+                        <Tv size={28} />
+                        Reel Grafismo y Edición
+                      </button>
+                    </a>
                     <button>
                       <Phone size={28} />
-                      600700231{" "}
+                      600700231
                     </button>
-                    <a href={`mailto:ttachaves@hotmail.com`}>
-                      <div className="mail-banner">
-                        <img className="img-mail-footer" src={mail} alt="" />
-                        <span>ttachaves@hotmail.com</span>
-                      </div>
-                    </a>
                   </div>
                 </div>
               )}
