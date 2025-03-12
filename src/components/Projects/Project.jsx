@@ -4,6 +4,8 @@ import ProjectCard from "../../components/ProjectsCard/ProjectCard.jsx";
 import projImg1 from "../../assets/img/timenuevo.png";
 import projImg2 from "../../assets/img/geofilm.png";
 import projImg3 from "../../assets/img/eternalok.png";
+import projImg4 from "../../assets/img/calimaco.jpg";
+
 import timeshare from "../../assets/animations/timesharelinkedin.mp4";
 import geofilm from "../../assets/animations/geofilm.mp4";
 import joaquin from "../../assets/animations/eternalconmarco.mp4";
@@ -57,14 +59,24 @@ function Projects() {
         "React || Figma || CSS || Node || Javascript || Sass || HTML ",
       imgUrl: pablo,
       url: "https://www.pablochaves.com/",
-      
-      figma:"https://www.figma.com/design/WfshEebQHhNB0xxb1ANE4c/Pablo-Chaves-Escen%C3%B3grafo?node-id=0-1&node-type=canvas&t=VP6bFBJ4tRgCXmBR-0",
+
+      figma:
+        "https://www.figma.com/design/WfshEebQHhNB0xxb1ANE4c/Pablo-Chaves-Escen%C3%B3grafo?node-id=0-1&node-type=canvas&t=VP6bFBJ4tRgCXmBR-0",
       detail:
         "Desarrolladora Front-end y UX-UI del portfolio del escenógrafo Pablo Chaves, recien nominado a los premios MAX.  He desarrollado la plataforma usando React, así como en la conceptualización y diseño utilizando la plataforma Figma.",
     },
   ];
 
   const projets2 = [
+    {
+      title: "Calimaco",
+      description:
+        " React || Nodejs || SQL || Javascript || HTML || MUI || CSS  ",
+      imgUrl: projImg4,
+      url: "https://www.calimaco.com/",
+      detail:
+        "Desarrollo de soluciones personalizadas con React, Node.js, Express, SQL y MUI para plataformas iGaming, optimizando el back office, la gestión de datos y los procesos automatizados.Se trata de un banco de tiempo, donde el usuario registrado puede crear los servicios que quiere ofrecer a la comunidad (editarlos y eliminarlos) y contratar un servicio de otro usuario. El pago se hace a través de una moneda única: el tiempo ⏳.Cada usuario dispone de 5 horas al darse de alta en nuestra app,con las cuales podrá empezar a contratar servicios de otros usuarios, y sumará horas a su perfil si otros usuarios contratan su servicio. TimeShare ha sido creada en ReacJs y Express(cliente y servidor), con la ayuda de NodeJs y conectada con nuestra propia API en Mongo Atlas. Para el correcto funcionamiento de la app, se ha hecho uso avanzado de CSS(responsive design, animation keyframes) React Boostrap, Cloudinary, sistema de actualización del token, renderizado condicional, juego de roles: user y admin, rutas protegidas, gestión de errores, ventanas modales y alertas periféricas que mejoran y ayudan a experiencia del usuario.",
+    },
     {
       title: "TimeShare",
       description: " React || Nodejs || MongoDb || Javascript || HTML || CSS  ",
@@ -149,8 +161,7 @@ function Projects() {
                 <div
                   className={
                     isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
+                  }>
                   {/* <p className="pp">Y estos son los culpables de que me haya enamorado del Desarrollo Web. Cada uno de ellos me ha enseñado algo,
                                         a intentar crear un mundo más colaborativo, a rendir tributo al mejor jugador del planeta, a unir mis dos pasiones, el cine y la programación
                                       y todo gracias al código. ¿A quién no le va a gustar? </p> */}
@@ -177,8 +188,7 @@ function Projects() {
                     <Nav
                       variant="pills"
                       className="nav-pills mb-5 justify-content-center align-items-center"
-                      id="pills-tab"
-                    >
+                      id="pills-tab">
                       <Nav.Item>
                         <Nav.Link eventKey="first">Frontend</Nav.Link>
                       </Nav.Item>
@@ -194,8 +204,7 @@ function Projects() {
                       id="slideInUp"
                       className={
                         isVisible ? "animate__animated animate__slideInUp" : ""
-                      }
-                    >
+                      }>
                       <Tab.Pane eventKey="first">
                         <Row>
                           {projects.map((project, index) => {
@@ -276,15 +285,13 @@ function Projects() {
                       {model && (
                         <button
                           className="model-close-btn"
-                          onClick={() => closeModel()}
-                        >
+                          onClick={() => closeModel()}>
                           X
                         </button>
                       )}
                       <div
                         className="video-container"
-                        onClick={() => openModel()}
-                      >
+                        onClick={() => openModel()}>
                         <p className="title-video">{videos[index].nameVideo}</p>
                         <hr></hr>
                         <Video
@@ -297,8 +304,7 @@ function Projects() {
                             "Volume",
                             "Fullscreen",
                           ]}
-                          poster={item.poster}
-                        >
+                          poster={item.poster}>
                           <source src={item.videoUri} type="video/webm" />
                         </Video>
                       </div>

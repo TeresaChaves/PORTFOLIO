@@ -102,8 +102,7 @@ function Banner() {
                 <div
                   className={
                     isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
+                  }>
                   <h1 className="tagline">Teresa Chaves Maza</h1>
                   <p>{` Web Developer`}</p>{" "}
                   <p className="cargo">{` Frontend / UX-UI`}</p>{" "}
@@ -112,8 +111,7 @@ function Banner() {
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
-                      data-rotate='[ "Full Stack", "Frontend", "Backend" ]'
-                    >
+                      data-rotate='[ "Full Stack", "Frontend", "Backend" ]'>
                       <span className="wrap">{text}</span>
                     </span>
                   </h3>
@@ -145,8 +143,7 @@ function Banner() {
                         onHide={handleClose}
                         backdropClassName="dark-background"
                         aria-modal="true"
-                        aria-hidden={!modalOpen}
-                      >
+                        aria-hidden={!modalOpen}>
                         <Modal.Header closeButton>
                           <Modal.Title>Formación académica</Modal.Title>
                         </Modal.Header>
@@ -189,6 +186,34 @@ function Banner() {
                           <Modal.Title>Experiencia Profesional</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
+                          <div className="fecha-trabajo">
+                            <span className="span-name">CALIMACO</span>
+                            <span>2024 / 2025</span>
+                          </div>
+                          <p className="description-job">
+                            Desarrollo y mantenimiento de aplicaciones web con
+                            React, Node.js y Express. Gestión de bases de datos
+                            SQL, incluyendo creación de tablas, procedimientos
+                            almacenados y optimización de consultas.
+                            Implementación de mejoras en el backoffice según los
+                            requerimientos de 10 casinos internacionales,
+                            adaptando funcionalidades a sus necesidades.
+                            Despliegues mensuales a producción, asegurando la
+                            estabilidad y calidad del código. Compilación y
+                            despliegue automatizado con Argo CD, optimizando la
+                            entrega continua (CI/CD). Revisión de código para
+                            garantizar buenas prácticas, optimización y
+                            cumplimiento de estándares. Gestión de tareas con
+                            Jira, siguiendo un flujo ágil donde las
+                            funcionalidades pasaban por testing (QA) antes de la
+                            implementación en producción. Uso de la librería MUI
+                            para diseñar interfaces modernas, accesibles y
+                            personalizadas, mejorando la experiencia del
+                            usuario. Colaboración con el equipo técnico para
+                            ofrecer un soporte robusto y flexible a los
+                            operadores de plataformas iGaming.
+                          </p>
+                          <br />
                           <div className="fecha-trabajo">
                             <span className="span-name">OSOIGO NEXT</span>
                             <span>2023 / 2024</span>
@@ -260,8 +285,7 @@ function Banner() {
                   <div className="botones-experiencia">
                     <a
                       href="https://vimeo.com/manage/videos/580786976"
-                      target="_blank"
-                    >
+                      target="_blank">
                       <button>
                         <Tv size={28} />
                         Reel Grafismo y Edición
@@ -282,8 +306,7 @@ function Banner() {
                 <div
                   className={
                     isVisible ? "animate__animated animate__zoomIn" : ""
-                  }
-                >
+                  }>
                   <LottieComp className="cambiar-color"></LottieComp>
                 </div>
               )}
