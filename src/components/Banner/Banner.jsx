@@ -191,27 +191,46 @@ function Banner() {
                             <span>2024 / 2025</span>
                           </div>
                           <p className="description-job">
-                            Desarrollo y mantenimiento de aplicaciones web con
-                            React, Node.js y Express. Gestión de bases de datos
-                            SQL, incluyendo creación de tablas, procedimientos
-                            almacenados y optimización de consultas.
-                            Implementación de mejoras en el backoffice según los
-                            requerimientos de 10 casinos internacionales,
-                            adaptando funcionalidades a sus necesidades.
-                            Despliegues mensuales a producción, asegurando la
-                            estabilidad y calidad del código. Compilación y
-                            despliegue automatizado con Argo CD, optimizando la
-                            entrega continua (CI/CD). Revisión de código para
-                            garantizar buenas prácticas, optimización y
-                            cumplimiento de estándares. Gestión de tareas con
-                            Jira, siguiendo un flujo ágil donde las
-                            funcionalidades pasaban por testing (QA) antes de la
-                            implementación en producción. Uso de la librería MUI
-                            para diseñar interfaces modernas, accesibles y
-                            personalizadas, mejorando la experiencia del
-                            usuario. Colaboración con el equipo técnico para
-                            ofrecer un soporte robusto y flexible a los
-                            operadores de plataformas iGaming.
+                            <ul>
+                              <li>
+                                Desarrollo y mantenimiento de aplicaciones web
+                                con <b>React, Node.js y Express.</b>
+                              </li>
+                              <li>
+                                Gestión de bases de datos <b>SQL</b>, incluyendo
+                                creación de tablas, procedimientos almacenados y
+                                optimización de consultas.
+                              </li>
+                              <li>
+                                Creación de <b>APIs RESTful</b> con Express,
+                              </li>
+                              <li>
+                                Implementación de mejoras en el{" "}
+                                <b>backoffice</b> según los requerimientos de
+                                cliente.
+                              </li>
+
+                              <li>
+                                Compilación y despliegue automatizado con{" "}
+                                <b>Argo CD </b>, optimizando la entrega continua
+                                (CI/CD).
+                              </li>
+                              <li>
+                                Revisión de código para garantizar buenas
+                                prácticas, optimización y cumplimiento de
+                                estándares. <b> Clean code</b> .
+                              </li>
+                              <li>
+                                Gestión de tareas con <b> Jira</b> siguiendo un
+                                flujo ágil.
+                              </li>
+                              <li>
+                                Uso de la librería <b>MUI </b> para diseñar
+                                interfaces modernas, accesibles y
+                                personalizadas, mejorando la experiencia del
+                                usuario.
+                              </li>
+                            </ul>
                           </p>
                           <br />
                           <div className="fecha-trabajo">
@@ -219,12 +238,49 @@ function Banner() {
                             <span>2023 / 2024</span>
                           </div>
                           <p className="description-job">
-                            Desarrollo y diseño de los proyectos desarrollados
-                            dentro de Osoigo, consultoría de participación para
-                            la administración pública y empresas, Implementación
-                            de la accesibilidad bajo criterios WCAG. Frontend y
-                            diseño de la sección de participaciones de la web de
-                            RTVE.
+                            <ul>
+                              <li>
+                                Desarrollo del Frontend de una plataforma de
+                                participación ciudadana para una televisión
+                                nacional.
+                              </li>
+                              <li>
+                                Implementación de foros, videoencuentros,
+                                encuestas y votaciones.
+                              </li>
+                              <li>
+                                Creación de interfaces responsivas y accesibles
+                                con HTML5 y SASS.
+                              </li>
+                              <li>
+                                Desarrollo de aplicaciones en React con
+                                componentes modulares y reutilizables.
+                              </li>
+                              <li>
+                                Gestión del estado con React Hooks y React
+                                Query.
+                              </li>
+                              <li>
+                                Uso de WebSockets para videoencuentros en tiempo
+                                real.
+                              </li>
+                              <li>
+                                Optimización del rendimiento con lazy loading y
+                                code splitting.
+                              </li>
+                              <li>
+                                Pruebas unitarias e integración para asegurar la
+                                calidad del código.
+                              </li>
+                              <li>
+                                Consumo e integración de APIs RESTful para
+                                gestión de datos asíncronos.
+                              </li>
+                              <li>
+                                Uso de arquitectura basada en componentes y
+                                gestión del estado con React Query.
+                              </li>
+                            </ul>
                           </p>
                           <br />
                           <div className="fecha-trabajo">

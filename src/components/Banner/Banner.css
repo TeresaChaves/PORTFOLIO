@@ -5,6 +5,9 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.description-job ul li {
+  padding-bottom: 10px;
+}
 
 .banner .tagline {
   font-weight: bolder !important;
@@ -26,6 +29,11 @@
 .lottie-filter {
   filter: hue-rotate(280deg);
   opacity: 0.5; /* Puedes ajustar el valor del ángulo según tu preferencia */
+}
+.description-job ul li b {
+  /* color: #060706; */
+  text-transform: uppercase;
+  /* text-decoration: underline; */
 }
 
 .dark-background {
