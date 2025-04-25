@@ -47,8 +47,7 @@ function Navigation() {
               className={
                 activeLink === "home" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("home")}
-            >
+              onClick={() => onUpdateActiveLink("home")}>
               Home
             </NavLink>
             <NavLink
@@ -56,8 +55,7 @@ function Navigation() {
               className={
                 activeLink === "link" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("skills")}
-            >
+              onClick={() => onUpdateActiveLink("skills")}>
               Skills
             </NavLink>
             <NavLink
@@ -65,8 +63,7 @@ function Navigation() {
               className={
                 activeLink === "projects" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("projects")}
-            >
+              onClick={() => onUpdateActiveLink("projects")}>
               Proyectos
             </NavLink>
           </Nav>
@@ -74,17 +71,15 @@ function Navigation() {
             <div className="social-icon">
               <a
                 href="https://www.linkedin.com/in/teresachavesmaza/"
-                target="_blank"
-              >
+                target="_blank">
                 <img src={navIcon1} alt="linkedin" />
               </a>
               <a href="https://github.com/TeresaChaves" target="_blank">
                 <img className="git-img" src={navIcon2} alt="github" />
               </a>
               <a
-                href="https://drive.google.com/file/d/10wUKwEVY2ctHqWMN6aEuh9J15tnoAsVf/view?usp=sharing"
-                target="_blank"
-              >
+                href="https://drive.google.com/file/d/1LB4k_77F_FVxZ0vKKQdyIg2k4uVMJtPx/view?usp=sharing"
+                target="_blank">
                 <img className="cv-img" src={navIcon3} alt="instagram" />
               </a>
             </div>
