@@ -3,14 +3,13 @@ import { Phone } from "react-bootstrap-icons";
 import { Tv } from "react-bootstrap-icons";
 
 import LottieComp from "../Lottie/Lottie";
-// import headerImg from "../../assets/img/header-img.svg"
 import { useState, useEffect } from "react";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import "./Banner.css";
 import { Modal } from "react-bootstrap";
-import mail from "../../assets/img/ggg.png";
-import cv from "../../assets/img/cv.png";
+import TreeList from "../TreeList/TreeList";
+import TreeListEducation from "../TreeListEducation/TreeListEducation";
 function Banner() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -135,7 +134,18 @@ function Banner() {
                     Pero también tengo carreras un poco más homologadas.{" "}
                     {/* <a href="https://drive.google.com/drive/u/0/folders/1Wf-Cs5tol11Nt0UqwIXzi3Jr_r1UD_0E"> */}
                     <div className="botones-experiencia">
-                      <button className="button3" onClick={handleShow}>
+                      <TreeListEducation></TreeListEducation>
+                      <TreeList
+                        title="EXPERIENCIA PROFESIONAL"
+                        year01="2024 / 2025"
+                        year02="2022 / 2024"
+                        company="Calímaco"
+                        company02="Osoigo"
+                        project="Backoffice"
+                        tec01="SQL"
+                        tec02="React.js"
+                        tec03="Node.js"></TreeList>
+                      {/* <button className="button3" onClick={handleShow}>
                         Formación Académica
                       </button>
                       <Modal
@@ -177,8 +187,8 @@ function Banner() {
                           </div>
                           <p>UNIVERSIDAD PABLO DE OLAVIDE</p>
                         </Modal.Body>
-                      </Modal>
-                      <button className="button3" onClick={handleShow2}>
+                      </Modal> */}
+                      {/* <button className="button3" onClick={handleShow2}>
                         EXPERIENCIA PROFESIONAL
                       </button>
                       <Modal show={showModal2} onHide={handleClose2}>
@@ -330,14 +340,10 @@ function Banner() {
                             favoritas.
                           </p>
                         </Modal.Body>
-                      </Modal>
+                      </Modal> */}
                     </div>
                     {/* </a> */}
                   </p>
-                  {/* <p>
-                    Soy tan valiente que he puesto el icono de la caca en mi
-                    portfolio.
-                  </p> */}
                   <div className="botones-experiencia">
                     <a
                       href="https://vimeo.com/manage/videos/580786976"
@@ -367,18 +373,6 @@ function Banner() {
                 </div>
               )}
             </TrackVisibility>
-
-            {/* <span className="tagline">
-                            Bienvenid@ a mi Porfolio
-                        </span>
-                        <h1>{`Soy Web Developer`} <span className="wrap">{text}</span></h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia natus est eveniet atque, dolore aliquid inventore eum enim sed laborum aspernatur asperiores veritatis officiis impedit, obcaecati corrupti, blanditiis nulla possimus.
-                        </p>
-                        <button onClick={() => console.log('conect')}>Conecta<ArrowRightCircle size={25}></ArrowRightCircle></button> */}
-            {/* </Col>
-                    <Col xs={12} md={6} xl={5}>
-                        {/* <img src={headerImg} alt="Header"></img> */}
-            {/* <LottieComp></LottieComp> */}
           </Col>
         </Row>
       </Container>

@@ -1,9 +1,5 @@
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 import { Row, Col, Modal } from "react-bootstrap";
 import "./ProjectsCards.css";
-import navIcon2 from "../../assets/img/icons8-github.svg";
-import ModalProjects from "../Modal/Modal";
 import { useState } from "react";
 
 function ProjectCard({ title, description, imgUrl, url, git, detail, figma }) {
@@ -64,7 +60,7 @@ function ProjectCard({ title, description, imgUrl, url, git, detail, figma }) {
                 </button>
               </a>
             )}
-          
+
             <a>
               <button className="button2" onClick={openModal}>
                 <span>Detalles</span>

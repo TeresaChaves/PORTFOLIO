@@ -74,7 +74,12 @@
 .botones-experiencia {
   display: flex;
   flex-direction: row;
+  /* PADDING: 20PX; */
+  /* flex-wrap: wrap; */
+  /* WIDTH: 100%; */
   justify-content: space-between;
+  margin-top: 60px;
+  gap: 30px;
 }
 .fecha-trabajo {
   display: flex;
@@ -324,4 +329,9 @@
   .banner button {
     opacity: 0.8;
   }
+}
+
+ol,
+ul {
+  padding-left: 1rem !important;
 }
