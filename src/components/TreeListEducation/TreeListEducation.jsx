@@ -84,7 +84,7 @@ export default function TreeListEducation({}) {
             </Tree>
           </Tree>
         </Tree>
-        <Tree name="2008 / 2009" style={{ opacity: "0.5" }} />
+        {/* <Tree name="2008 / 2009" style={{ opacity: "0.5" }} />
         <Tree name="Postgrado en Postproducción y VFX">
           <Tree name="Escuela TAI" />
           <Tree name="Skills">
@@ -111,9 +111,8 @@ export default function TreeListEducation({}) {
               </div>
             </Tree>
           </Tree>
-        </Tree>
+        </Tree> */}
         <Tree name="2003 / 2005" style={{ opacity: "0.5" }} />
-
         <Tree name="Téc. Sup. Realización Audiovisuales">
           <Tree name="ESAMA" />
           <Tree name="Skills">
@@ -138,9 +137,8 @@ export default function TreeListEducation({}) {
             </Tree>
           </Tree>
         </Tree>
-        {/* <Tree name="2000 / 2003" style={{ opacity: "0.5" }} /> */}
-
-        {/* <Tree name="Diplomatura Trabajo Social ">
+        <Tree name="2000 / 2003" style={{ opacity: "0.5" }} />
+        <Tree name="Diplomatura Trabajo Social ">
           <Tree name="Universidad Pablo de Olavide" />
           <Tree name="Skills">
             <Tree
@@ -171,7 +169,7 @@ export default function TreeListEducation({}) {
               </div>
             </Tree>
           </Tree>
-        </Tree> */}
+        </Tree>
       </Tree>
     </Container>
   );
