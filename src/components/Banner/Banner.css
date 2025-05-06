@@ -333,5 +333,9 @@
 
 ol,
 ul {
-  padding-left: 1rem !important;
+  padding-left: 0.5rem !important;
+  /* display: block; */
+  width: 100%;
+  /* white-space: normal; */
+  text-align: justify;
 }

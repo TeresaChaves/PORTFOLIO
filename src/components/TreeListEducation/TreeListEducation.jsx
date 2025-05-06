@@ -138,9 +138,9 @@ export default function TreeListEducation({}) {
             </Tree>
           </Tree>
         </Tree>
-        <Tree name="2000 / 2003" style={{ opacity: "0.5" }} />
+        {/* <Tree name="2000 / 2003" style={{ opacity: "0.5" }} /> */}
 
-        <Tree name="Diplomatura Trabajo Social ">
+        {/* <Tree name="Diplomatura Trabajo Social ">
           <Tree name="Universidad Pablo de Olavide" />
           <Tree name="Skills">
             <Tree
@@ -171,7 +171,7 @@ export default function TreeListEducation({}) {
               </div>
             </Tree>
           </Tree>
-        </Tree>
+        </Tree> */}
       </Tree>
     </Container>
   );

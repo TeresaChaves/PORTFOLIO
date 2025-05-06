@@ -3,6 +3,7 @@ import { useSpring, a } from "@react-spring/web";
 import useMeasure from "react-use-measure";
 import { Container, Title, Frame, Content, toggle, List } from "./styles";
 import * as Icons from "./icons";
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
 function usePrevious(value) {
   const ref = useRef();
@@ -47,7 +48,6 @@ export default function TreeList({
   title,
   year01,
   year02,
-
   company,
   company02,
   tec01,
@@ -225,8 +225,8 @@ export default function TreeList({
             </Tree>
           </Tree>
         </Tree>
-        <Tree name="2020 / 2025" style={{ opacity: "0.5" }} />
-        <Tree name="Freelance">
+        {/* <Tree name="2020 / 2025" style={{ opacity: "0.5" }} /> */}
+        {/* <Tree name="Freelance">
           <Tree name="TimeShare" />
           <Tree name="Tecnologías">
             <Tree name="React.js" style={{ color: "#37ceff" }} />
@@ -286,7 +286,7 @@ export default function TreeList({
               </div>
             </Tree>
           </Tree>
-        </Tree>
+        </Tree> */}
       </Tree>
     </Container>
   );
