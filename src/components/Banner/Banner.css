@@ -330,6 +330,12 @@
     opacity: 0.8;
   }
 }
+@media screen and (max-width: 1219px) {
+  .botones-experiencia {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 
 ol,
 ul {
