@@ -1,7 +1,7 @@
 import { Card, Button, Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import "./Projects.css";
 import ProjectCard from "../../components/ProjectsCard/ProjectCard.jsx";
-import projImg1 from "../../assets/img/timenuevo.png";
+import projImg1 from "../../assets/img/timesharebn.jpeg";
 import projImg2 from "../../assets/img/geofilm.png";
 import projImg3 from "../../assets/img/eternalok.png";
 import projImg4 from "../../assets/img/calimaco.jpg";
