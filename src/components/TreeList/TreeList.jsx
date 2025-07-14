@@ -48,8 +48,10 @@ export default function TreeList({
   title,
   year01,
   year02,
+  year03,
   company,
   company02,
+  company03,
   tec01,
   tec02,
   tec03,
@@ -58,6 +60,57 @@ export default function TreeList({
   return (
     <Container>
       <Tree name={title} style={{ opacity: "0.8" }} defaultOpen>
+        {/* <Tree name={year03} style={{ opacity: "0.5" }} />
+        <Tree name={company03}>
+          <Tree name={project} />
+          <Tree name="Tecnologías">
+            <Tree name={tec01} style={{ color: "#37ceff" }} />
+            <Tree name={tec02} style={{ color: "#37ceff" }} />
+            <Tree name={tec03} style={{ color: "#37ceff" }} />
+            <Tree name="Argo CD" style={{ color: "#37ceff" }} />
+            <Tree name="Express" style={{ color: "#37ceff" }} />
+            <Tree name="Descripción">
+              <div
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  padding: 10,
+                }}>
+                <ul>
+                  <List>
+                    Desarrollo y mantenimiento de aplicaciones web con{" "}
+                    <b>React, Node.js y Express.</b>
+                  </List>
+
+                  <List>
+                    Gestión de bases de datos <b>SQL</b>, creación de tablas,
+                    procedimientos almacenados y optimización de consultas.
+                  </List>
+                  <List>
+                    Creación de <b>APIs RESTful</b> con Express,
+                  </List>
+
+                  <List>
+                    Compilación y despliegue automatizado con <b>Argo CD </b>,
+                    optimizando la entrega continua (CI/CD).
+                  </List>
+                  <List>
+                    Revisión de código para garantizar buenas prácticas,
+                    optimización y cumplimiento de estándares.{" "}
+                    <b> Clean code</b> .
+                  </List>
+                  <List>
+                    Gestión de tareas con <b> Jira</b> siguiendo un flujo ágil.
+                  </List>
+                  <List>
+                    Uso de la librería <b>MUI </b> para diseñar interfaces
+                    modernas, accesibles y personalizadas.
+                  </List>
+                </ul>
+              </div>
+            </Tree>
+          </Tree>
+        </Tree> */}
         <Tree name={year01} style={{ opacity: "0.5" }} />
         <Tree name={company}>
           <Tree name={project} />

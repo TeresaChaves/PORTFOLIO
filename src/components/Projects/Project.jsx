@@ -16,6 +16,7 @@ import React, { useState, createRef } from "react";
 import TrackVisibility from "react-on-screen";
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 import messenger from "../../assets/img/Messenger.jpeg";
+import rtve from "../../assets/img/rtve.jpeg";
 import messegerVideo from "../../assets/animations/MessengerAlive.mp4";
 import creditsong from "../../assets/animations/CR2v.mp4";
 import creditimage from "../../assets/img/Credit2.jpg";
@@ -27,20 +28,93 @@ import subr from "../../assets/img/subrayado.svg";
 import trespuntos from "../../assets/img/ctrl.svg";
 import pausa from "../../assets/img/pause.svg";
 import cn from "../../pages/utils.js";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function Projects() {
   const [model, setModel] = useState(false);
 
   const projects = [
     {
-      title: "Osoigo",
+      title: "RTVE Participa",
+      url: "https://www.rtve.es/participa/es/",
+      description: "React || Figma || Express ||  Node Javascript ||  Swagger",
+      imgUrl: rtve,
+      git: "https://github.com/TeresaChaves",
+      detail: `<div class='detail-rtve'>
+    <p><b>Desarrolladora Front-end y UX-UI de la plataforma de participación RTVE Participa.</b></p>
+    <p>Me encargué tanto de la conceptualización y diseño de la interfaz como de la implementación lógica de las funcionalidades, asegurando una experiencia accesible, fluida y escalable.</p>
+    <div class='detail-section'>
+      <span class='detail-icon'></span>
+      <b>La plataforma permite:</b>
+      <ul class='detail-list'>
+        <li>Proponer y apoyar iniciativas.</li>
+        <li>Participar en encuestas y votaciones públicas.</li>
+        <li>Comentar y debatir temas de actualidad.</li>
+        <li>Suscribirse a contenidos de su interés.</li>
+        <li>Acceso a su perfil y actividad histórica (propuestas, votos, comentarios).</li>
+        <li>Acumular puntos mediante la participación y canjear esto por premios.</li>
+      </ul>
+    </div>
+    <div class='detail-section'>
+      <span class='detail-icon'>🛠️</span>
+      <b>Mi rol abarcó tanto la parte de diseño como la implementación técnica:</b>
+      <ul class='detail-list'>
+        <li>Diseño completo de la interfaz con <b>Figma</b>.</li>
+        <li>Desarrollo con <b>React</b> bajo una arquitectura escalable y modular.</li>
+        <li>Comunicación con <b>APIs RESTful</b>.</li>
+        <li>Manejo de estado y caché con <b>React Query</b>.</li>
+        <li>Creación de custom hooks y uso de <b>useContext</b>.</li>
+        <li>Estilos modulares con <b>SASS</b> y uso de HTML semántico.</li>
+        <li>Aplicación de estándares de <b>accesibilidad web</b> y diseño 100% responsive.</li>
+      </ul>
+    </div>
+    <div class='detail-section'>
+      <span class='detail-icon'>🤝</span>
+      <span>Colaboré estrechamente con el equipo backend (Node.js y Django), asegurando una integración eficiente y robusta entre frontend y servidor.</span>
+    </div>
+    <div class='detail-section'>
+      <span class='detail-icon'>🎨</span>
+      <span>Cada componente visual fue diseñado desde cero, buscando ofrecer una experiencia intuitiva, clara e inclusiva, adaptada a diferentes dispositivos y tipos de usuario.</span>
+    </div>
+  </div>`,
+    },
+    {
+      title: "OSOIGO",
       url: "https://www.osoigonext.com/",
       description:
         "React || Figma || Express || Django || Node Javascript || Python || Swagger",
       imgUrl: osoigo,
       git: "https://github.com/TeresaChaves",
-      detail:
-        "Desarrolladora Front-end y UX-UI en Osoigo, creación y diseño de proyectos innovadores de participación ciudadana. Mi enfoque principal está en la implementación de soluciones tecnológicas utilizando React, así como en la conceptualización y diseño utilizando la plataforma Figma. Mi trabajo abarca desde la conexión con APIs hasta la implementación de medidas de accesibilidad para garantizar la inclusividad en todos los aspectos del desarrollo.",
+      detail: `<div class='detail-osoigo'>
+    <p><b>Desarrolladora Front-end y UX-UI en Osoigo.</b></p>
+    <p>Creación y diseño de proyectos innovadores de participación ciudadana, con enfoque en accesibilidad y usabilidad.</p>
+    <div class='detail-section'>
+      <span class='detail-icon'>🗳️</span>
+      <b>Funcionalidades principales:</b>
+      <ul class='detail-list'>
+        <li>Plataforma para iniciativas ciudadanas y debates públicos.</li>
+        <li>Encuestas, votaciones y comentarios en tiempo real.</li>
+        <li>Gestión de perfiles y actividad histórica.</li>
+        <li>Integración con APIs y sistemas de notificaciones.</li>
+      </ul>
+    </div>
+    <div class='detail-section'>
+      <span class='detail-icon'>🛠️</span>
+      <b>Mi rol:</b>
+      <ul class='detail-list'>
+        <li>Diseño UI/UX con <b>Figma</b>.</li>
+        <li>Desarrollo con <b>React</b> y <b>Django</b>.</li>
+        <li>Implementación de accesibilidad y responsive design.</li>
+        <li>Conexión con APIs y backend robusto.</li>
+      </ul>
+    </div>
+    <div class='detail-section'>
+      <span class='detail-icon'>🤝</span>
+      <span>Colaboración con equipos multidisciplinares para garantizar calidad y escalabilidad.</span>
+    </div>
+  </div>`,
     },
     {
       title: "Credit Song",
@@ -49,10 +123,30 @@ function Projects() {
         "Javascript || HTML || CSS || Reactjs || Boostrap || LottieWeb || Jquery || ContexAPI ",
       imgUrl: creditimage,
       git: "https://github.com/TeresaChaves/ClienteBlock/tree/master",
-      detail:
-        "Desarrollo y diseño de toda la parte del Frontend. CreditSong es una startup con sede en Barcelona y Dubai basada en la tecnología blockchain centrada en la industria musical.",
+      detail: `<div class='detail-credit'>
+    <p><b>Desarrollo y diseño de toda la parte del Frontend para CreditSong.</b></p>
+    <p>Startup basada en blockchain para la industria musical, con sedes en Barcelona y Dubai.</p>
+    <div class='detail-section'>
+      <span class='detail-icon'>🎵</span>
+      <b>Características:</b>
+      <ul class='detail-list'>
+        <li>Gestión de créditos musicales y derechos de autor.</li>
+        <li>Interfaz animada con <b>LottieWeb</b> y <b>React</b>.</li>
+        <li>Integración con APIs y pagos blockchain.</li>
+        <li>Responsive design y experiencia de usuario optimizada.</li>
+      </ul>
+    </div>
+    <div class='detail-section'>
+      <span class='detail-icon'>🛠️</span>
+      <b>Mi rol:</b>
+      <ul class='detail-list'>
+        <li>Diseño UI/UX desde cero.</li>
+        <li>Desarrollo con <b>React</b>, <b>Bootstrap</b> y <b>Jquery</b>.</li>
+        <li>Implementación de animaciones y custom hooks.</li>
+      </ul>
+    </div>
+  </div>`,
     },
-
     {
       title: "Escenógrafo-Arquitectura",
       description:
@@ -62,57 +156,165 @@ function Projects() {
 
       figma:
         "https://www.figma.com/design/WfshEebQHhNB0xxb1ANE4c/Pablo-Chaves-Escen%C3%B3grafo?node-id=0-1&node-type=canvas&t=VP6bFBJ4tRgCXmBR-0",
-      detail:
-        "Desarrolladora Front-end y UX-UI del portfolio del escenógrafo Pablo Chaves, recien nominado a los premios MAX.  He desarrollado la plataforma usando React, así como en la conceptualización y diseño utilizando la plataforma Figma.",
+      detail: `<div class='detail-pablo'>
+    <p><b>Desarrolladora Front-end y UX-UI del portfolio de Pablo Chaves.</b></p>
+    <p>Portfolio para escenógrafo nominado a los premios MAX, con diseño y desarrollo personalizado.</p>
+    <div class='detail-section'>
+      <span class='detail-icon'>🎭</span>
+      <b>Características:</b>
+      <ul class='detail-list'>
+        <li>Diseño visual único y adaptado al cliente.</li>
+        <li>Responsive design y animaciones CSS.</li>
+        <li>Integración con <b>Figma</b> y <b>React</b>.</li>
+        <li>Gestión de contenido y portfolio multimedia.</li>
+      </ul>
+    </div>
+    <div class='detail-section'>
+      <span class='detail-icon'>🛠️</span>
+      <b>Mi rol:</b>
+      <ul class='detail-list'>
+        <li>Diseño UI/UX y desarrollo técnico.</li>
+        <li>Implementación de estilos con <b>SASS</b> y HTML semántico.</li>
+      </ul>
+    </div>
+  </div>`,
     },
   ];
 
   const projets2 = [
     {
       title: "Calimaco",
-      description:
-        " React || Nodejs || SQL || Javascript || HTML || MUI || CSS  ",
+      description: "React || Nodejs || SQL || Javascript || HTML || MUI || CSS",
       imgUrl: projImg4,
       url: "https://www.calimaco.com/",
-      detail:
-        "Desarrollo de soluciones personalizadas con React, Node.js, Express, SQL y MUI para plataformas iGaming, optimizando el back office, la gestión de datos y los procesos automatizados.Se trata de un banco de tiempo, donde el usuario registrado puede crear los servicios que quiere ofrecer a la comunidad (editarlos y eliminarlos) y contratar un servicio de otro usuario. El pago se hace a través de una moneda única: el tiempo ⏳.Cada usuario dispone de 5 horas al darse de alta en nuestra app,con las cuales podrá empezar a contratar servicios de otros usuarios, y sumará horas a su perfil si otros usuarios contratan su servicio. TimeShare ha sido creada en ReacJs y Express(cliente y servidor), con la ayuda de NodeJs y conectada con nuestra propia API en Mongo Atlas. Para el correcto funcionamiento de la app, se ha hecho uso avanzado de CSS(responsive design, animation keyframes) React Boostrap, Cloudinary, sistema de actualización del token, renderizado condicional, juego de roles: user y admin, rutas protegidas, gestión de errores, ventanas modales y alertas periféricas que mejoran y ayudan a experiencia del usuario.",
+      detail: `<div class='detail-calimaco'>
+    <p><b>Desarrolladora Fullstack en Calimaco.</b></p>
+    <p>Desarrollo y mantenimiento de aplicaciones web con <b>React</b>, <b>Node.js</b>, <b>Express</b> y <b>SQL</b> para plataformas <b>iGaming</b>, optimizando el <span style='text-decoration:underline;'>backoffice</span>, la gestión de datos y los procesos automatizados.</p>
+    <div class='detail-section'>
+      <span class='detail-icon'>🗄️</span>
+      <b>Gestión de bases de datos SQL:</b>
+      <ul class='detail-list'>
+        <li>Creación de tablas y procedimientos almacenados.</li>
+        <li>Optimización de consultas.</li>
+      </ul>
+    </div>
+    <div class='detail-section'>
+      <span class='detail-icon'>🚀</span>
+      <b>Despliegues y calidad:</b>
+      <ul class='detail-list'>
+        <li>Despliegues mensuales a producción, asegurando estabilidad y calidad.</li>
+        <li>Compilación y despliegue automatizado con <b>Argo CD</b> (CI/CD).</li>
+        <li>Revisión de código para buenas prácticas y cumplimiento de estándares.</li>
+      </ul>
+    </div>
+    <div class='detail-section'>
+      <span class='detail-icon'>📋</span>
+      <b>Gestión y diseño:</b>
+      <ul class='detail-list'>
+        <li>Gestión de tareas con <b>Jira</b> y flujo ágil.</li>
+        <li>Uso de la librería <b>MUI</b> para interfaces modernas, accesibles y personalizadas.</li>
+      </ul>
+    </div>
+  </div>`,
     },
     {
       title: "TimeShare",
-      description: " React || Nodejs || MongoDb || Javascript || HTML || CSS  ",
+      description: "React || Nodejs || MongoDb || Javascript || HTML || CSS",
       imgUrl: projImg1,
       url: "https://timeshare.netlify.app/",
       git: "https://github.com/TeresaChaves/BDT-client",
-      detail:
-        "Se trata de un banco de tiempo, donde el usuario registrado puede crear los servicios que quiere ofrecer a la comunidad (editarlos y eliminarlos) y contratar un servicio de otro usuario. El pago se hace a través de una moneda única: el tiempo ⏳.Cada usuario dispone de 5 horas al darse de alta en nuestra app,con las cuales podrá empezar a contratar servicios de otros usuarios, y sumará horas a su perfil si otros usuarios contratan su servicio. TimeShare ha sido creada en ReacJs y Express(cliente y servidor), con la ayuda de NodeJs y conectada con nuestra propia API en Mongo Atlas. Para el correcto funcionamiento de la app, se ha hecho uso avanzado de CSS(responsive design, animation keyframes) React Boostrap, Cloudinary, sistema de actualización del token, renderizado condicional, juego de roles: user y admin, rutas protegidas, gestión de errores, ventanas modales y alertas periféricas que mejoran y ayudan a experiencia del usuario.",
+      detail: `<div class='detail-timeshare'>
+    <p><b>Desarrolladora Fullstack en TimeShare.</b></p>
+    <p>Banco de tiempo donde el usuario registrado puede crear, editar y eliminar servicios para la comunidad, y contratar servicios de otros usuarios.</p>
+    <div class='detail-section'>
+      <span class='detail-icon'>⏳</span>
+      <b>Funcionamiento:</b>
+      <ul class='detail-list'>
+        <li>El pago se realiza con una moneda única: el tiempo.</li>
+        <li>Cada usuario dispone de 5 horas al darse de alta y puede contratar servicios o sumar horas si otros contratan los suyos.</li>
+        <li>Gestión de estados de los servicios: pendiente y aceptado, controlado por el usuario.</li>
+        <li>Valoración y comentarios sobre los servicios.</li>
+      </ul>
+    </div>
+    <div class='detail-section'>
+      <span class='detail-icon'>🛠️</span>
+      <b>Tecnologías y características:</b>
+      <ul class='detail-list'>
+        <li>Frontend en <b>ReactJS</b> y Backend en <b>Express</b> y <b>NodeJS</b>.</li>
+        <li>API propia conectada a <b>Mongo Atlas</b>.</li>
+        <li>Uso avanzado de <b>CSS</b> (responsive design, animation keyframes).</li>
+        <li>React Bootstrap, Cloudinary, sistema de actualización de token.</li>
+        <li>Renderizado condicional, roles de usuario (user y admin), rutas protegidas.</li>
+        <li>Gestión de errores, ventanas modales y alertas periféricas para mejorar la experiencia de usuario.</li>
+      </ul>
+    </div>
+  </div>`,
     },
     {
       title: "Geofilm",
       description:
-        "Express || Javascript || HTML || CSS || Boostrap || MongoDb || Postman ",
+        "Express || Javascript || HTML || CSS || Boostrap || MongoDb || Postman",
       imgUrl: projImg2,
       git: "https://github.com/gonzalodeveloper/geofilm",
-      detail:
-        "GeoFilm es una app que te permite localizar dónde se han rodado tus películas o series favoritas. Para ello creamos una interfaz conectada tanto con la Api de IMDB como con la Google Maps, creando así una base de datos propia gestionada a través de Mongo DB",
+      detail: `<div class='detail-geofilm'>
+      <p><b>Desarrolladora Fullstack en GeoFilm.</b></p>
+      <p>App para localizar lugares de rodaje de películas y series favoritas.</p>
+      <div class='detail-section'>
+        <span class='detail-icon'>🗺️</span>
+        <b>Características:</b>
+        <ul class='detail-list'>
+          <li>Conexión con API de IMDB y Google Maps.</li>
+          <li>Base de datos propia gestionada con MongoDB.</li>
+          <li>Interfaz intuitiva y responsive.</li>
+        </ul>
+      </div>
+    </div>`,
     },
-
     {
       title: "Messenger is Alive",
       description:
-        "Javascript || HTML || CSS || Socket.io || NodeJs || Boostrap || LottieWeb || Express|| React  ",
+        "Javascript || HTML || CSS || Socket.io || NodeJs || Boostrap || LottieWeb || Express|| React",
       imgUrl: messenger,
       git: "https://github.com/TeresaChaves/Chat_Shocketio",
-      detail:
-        "He entrado en muchos detalles en la construcción de esta aplicación de chat para cubrir casi todos los escenarios posibles, tales como la posibilidad tanto de chat público como privado, notificación de unión de usuario al chat, usuario fuera de línea y usuario en línea, los nombres de usuario duplicados, mensajes de error, notificación de mensajes no leídos, chat privado con varios usuarios al mismo tiempo y mucho más.",
+      detail: `<div class='detail-messenger'>
+      <p><b>Desarrolladora Fullstack en Messenger is Alive.</b></p>
+      <p>App de chat con múltiples escenarios: público, privado, notificaciones y gestión de usuarios.</p>
+      <div class='detail-section'>
+        <span class='detail-icon'>💬</span>
+        <b>Características:</b>
+        <ul class='detail-list'>
+          <li>Chat público y privado.</li>
+          <li>Notificaciones de usuario y mensajes no leídos.</li>
+          <li>Gestión de usuarios en línea y fuera de línea.</li>
+          <li>Animaciones con LottieWeb y diseño responsive.</li>
+        </ul>
+      </div>
+    </div>`,
     },
   ];
   const projets3 = [
     {
       title: "Eternal Joaquin",
-      description: "Javascript || HTML || CSS || CanvasRenderingContext2D    ",
+      description: "Javascript || HTML || CSS || CanvasRenderingContext2D",
       imgUrl: projImg3,
-      detail:
-        "Es un juego creado en Canvas y a través del lenguaje JavaScript. Es un divertido juego que hace que el famoso y querido jugador del Real Betis, Joaquín, se haga eterno y juegue siempre para el Betis, para ello tendrás que ir con tu Zombie comiéndote a todos los Joaquín que salgan y evitando las bombas, si consigues comerte a 10 Joaquín lo harás eterno y habrás superado el juego.",
+      detail: `<div class='detail-joaquin'>
+      <p><b>Desarrolladora de juegos en Canvas: Eternal Joaquin.</b></p>
+      <p>Juego divertido donde el objetivo es hacer eterno al jugador Joaquín evitando bombas y comiéndote a los Joaquines.</p>
+      <div class='detail-section'>
+        <span class='detail-icon'>🕹️</span>
+        <b>Tecnologías:</b>
+        <ul class='detail-list'>
+          <li>Javascript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>CanvasRenderingContext2D</li>
+        </ul>
+      </div>
+      <div class='detail-section'>
+        <span class='detail-icon'>🎮</span>
+        <span>Diseño de mecánicas, animaciones y experiencia de usuario.</span>
+      </div>
+    </div>`,
       url: "https://teresachaves.github.io/Zombie_Runner/",
       git: "https://github.com/TeresaChaves/Zombie_Runner",
     },
@@ -150,6 +352,29 @@ function Projects() {
       videoUri: creditsong,
     },
   ];
+
+  const sliderSettings = {
+    dots: true,
+    infinite: projects.length > 3,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
 
   return (
     <section className="project" id="project">
@@ -207,16 +432,28 @@ function Projects() {
                       }>
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
-                          })}
+                          <Col>
+                            <Slider {...sliderSettings}>
+                              {projects.map((project, index) => (
+                                <div key={index}>
+                                  <ProjectCard {...project} />
+                                </div>
+                              ))}
+                            </Slider>
+                          </Col>
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
                         <Row>
-                          {projets2.map((project2, index) => {
-                            return <ProjectCard key={index} {...project2} />;
-                          })}
+                          <Col>
+                            <Slider {...sliderSettings}>
+                              {projets2.map((project2, index) => (
+                                <div key={index}>
+                                  <ProjectCard {...project2} />
+                                </div>
+                              ))}
+                            </Slider>
+                          </Col>
                         </Row>
                       </Tab.Pane>
 

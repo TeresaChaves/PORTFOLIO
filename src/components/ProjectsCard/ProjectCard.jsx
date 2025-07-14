@@ -26,8 +26,17 @@ function ProjectCard({ title, description, imgUrl, url, git, detail, figma }) {
             <hr />
 
             <div className="descrition-container">
-              <p className="name-tec">Tecnologias:</p>
-              <p class="text-body">{description}</p>
+              <p className="name-tec">Tecnologías:</p>
+              <div
+                className="text-body"
+                style={{ marginBottom: "1rem", whiteSpace: "pre-line" }}>
+                {/* Si la descripción contiene saltos de línea o HTML, se renderiza correctamente */}
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: description.replace(/\n/g, "<br>"),
+                  }}
+                />
+              </div>
             </div>
           </>
         ) : (
@@ -37,8 +46,17 @@ function ProjectCard({ title, description, imgUrl, url, git, detail, figma }) {
             </div>
             <hr />
             <div className="descrition-container">
-              <p className="name-tec">Tecnologias:</p>
-              <p class="text-body">{description}</p>
+              <p className="name-tec">Tecnologías:</p>
+              <div
+                className="text-body"
+                style={{ marginBottom: "1rem", whiteSpace: "pre-line" }}>
+                {/* Si la descripción contiene saltos de línea o HTML, se renderiza correctamente */}
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: description.replace(/\n/g, "<br>"),
+                  }}
+                />
+              </div>
             </div>
           </>
         )}
@@ -71,8 +89,18 @@ function ProjectCard({ title, description, imgUrl, url, git, detail, figma }) {
                     <Modal.Title>Detalles de {title}</Modal.Title>
                   </Modal.Header>
                   <Modal.Body>
-                    <p className="description-modal"> {description}</p>
-                    <p className="detail-modal">{detail}</p>
+                    <div className="description-modal">{description}</div>
+                    <div
+                      className="detail-modal"
+                      dangerouslySetInnerHTML={{ __html: detail }}
+                      style={{
+                        fontSize: "1rem",
+                        color: "white",
+                        borderRadius: "10px",
+                        padding: "1rem",
+                        marginTop: "1rem",
+                      }}
+                    />
                   </Modal.Body>
                 </Modal>
               </Col>
