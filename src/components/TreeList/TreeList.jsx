@@ -111,7 +111,42 @@ export default function TreeList({
             </Tree>
           </Tree>
         </Tree> */}
+
         <Tree name={year01} style={{ opacity: "0.5" }} />
+        <Tree name="ALTEN">
+          <Tree name="Tecnologías">
+            <Tree name="React.js" style={{ color: "#37ceff" }} />
+            <Tree name={tec03} style={{ color: "#37ceff" }} />
+            <Tree name="Figma" style={{ color: "#37ceff" }} />
+            <Tree name="Descripción">
+              <div
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  padding: 10,
+                }}>
+                <ul>
+                  <List>
+                    Desarrollé la interfaz de una nueva aplicación interna para
+                    gestionar la previsión de gastos de los grupos de Publicis
+                    Groupe
+                  </List>
+
+                  <List>
+                    Implementé componentes dinámicos y reutilizables con React.
+                  </List>
+                  <List>
+                    Diseñé una interfaz moderna y responsiva con Tailwind CSS.
+                  </List>
+                  <List>
+                    Programé la lógica de interacción y manejo de datos con
+                    JavaScript.
+                  </List>
+                </ul>
+              </div>
+            </Tree>
+          </Tree>
+        </Tree>
         <Tree name={company}>
           <Tree name={project} />
           <Tree name="Tecnologías">
@@ -162,7 +197,9 @@ export default function TreeList({
             </Tree>
           </Tree>
         </Tree>
+
         <Tree name={year02} style={{ opacity: "0.5" }} />
+
         <Tree name={company02}>
           <Tree name="RTVE Participa" />
           <Tree name="Tecnologías">

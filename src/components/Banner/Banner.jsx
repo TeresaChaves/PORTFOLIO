@@ -120,8 +120,8 @@ function Banner() {
                   </p> */}
                   <p>
                     {" "}
-                    Frontend developer con más de <b>tres años</b> de
-                    experiencia en el sector tecnológico.
+                    Trabajando en el sector tecnológico como desarrolladora
+                    Frontend desde <b>2021</b>.
                   </p>
                   <p className="despcription-banner">
                     Me gusta aprender más que comer coquinas en Huelva. Tengo la
@@ -147,7 +147,8 @@ function Banner() {
                         tec01="SQL"
                         tec02="React.js"
                         tec03="Node.js"></TreeList>
-                      {/* <button className="button3" onClick={handleShow}>
+                      {/*antiguo modal comentado}
+                       <button className="button3" onClick={handleShow}>
                         Formación Académica
                       </button>
                       <Modal
