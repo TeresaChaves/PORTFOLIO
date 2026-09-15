@@ -104,7 +104,7 @@ function Banner() {
                   }>
                   <h1 className="tagline">Teresa Chaves Maza</h1>
                   <p>{` Web Developer`}</p>{" "}
-                  <p className="cargo">{`  VIdeo Editor / Motion Graphics`}</p>{" "}
+                  <p className="cargo">{`  Video Editor / Motion Graphics`}</p>{" "}
                   <h3 className="rotate-skills">
                     {" "}
                     <span
@@ -114,17 +114,11 @@ function Banner() {
                       <span className="wrap">{text}</span>
                     </span>
                   </h3>
-                  {/* <p>
-                    ¿Quieres que la persona más simpática de Madrid trabaje en
-                    tu empresa? 💩
-                  </p> */}
                   <p>
-                    {" "}
                     Trabajando en el sector audiovisual como editora y motion
                     graphics desde <b>2005</b> y en el sector tecnológico como
                     desarrolladora Frontend desde <b>2021</b>.
                   </p>
-                  <p></p>
                   <p className="despcription-banner">
                     Me gusta aprender más que comer coquinas en Huelva. Tengo la
                     Licenciatura de trabajar en equipo haciéndote sentir a gusto
