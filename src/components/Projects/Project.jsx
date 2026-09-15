@@ -2,12 +2,12 @@ import { Card, Button, Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import "./Projects.css";
 import ProjectCard from "../../components/ProjectsCard/ProjectCard.jsx";
 import projImg1 from "../../assets/img/timesharebn.jpeg";
-import projImg2 from "../../assets/img/geofilm.png";
+import projImg2 from "../../assets/img/portadareel.jpeg";
 import projImg3 from "../../assets/img/eternalok.png";
 import projImg4 from "../../assets/img/calimaco.jpg";
 
 import timeshare from "../../assets/animations/timesharelinkedin.mp4";
-import geofilm from "../../assets/animations/geofilm.mp4";
+import geofilm from "../../assets/animations/reel.mp4";
 import joaquin from "../../assets/animations/eternalconmarco.mp4";
 import { DefaultPlayer as Video } from "react-html5video/dist";
 import "react-html5video/dist/styles.css";
@@ -15,11 +15,13 @@ import { Fullscreen } from "react-bootstrap-icons";
 import React, { useState, createRef } from "react";
 import TrackVisibility from "react-on-screen";
 import colorSharp2 from "../../assets/img/color-sharp2.png";
-import messenger from "../../assets/img/Messenger.jpeg";
+import messenger from "../../assets/img/saboraperucover.jpeg";
 import rtve from "../../assets/img/rtve.jpeg";
-import messegerVideo from "../../assets/animations/MessengerAlive.mp4";
-import creditsong from "../../assets/animations/CR2v.mp4";
-import creditimage from "../../assets/img/Credit2.jpg";
+import messegerVideo from "../../assets/animations/peru.mp4";
+import creditsong from "../../assets/animations/lashurdes.mp4";
+import jaulavideo from "../../assets/animations/jaulaHD.mp4";
+import creditimage from "../../assets/img/lashurdes.jpeg";
+import jaula from "../../assets/img/JAULA.jpeg";
 import osoigo from "../../assets/img/OSOIGONUEVO.png";
 import pablo from "../../assets/img/pablo.jpeg";
 import rayo from "../../assets/img/cmd.svg";
@@ -330,7 +332,7 @@ function Projects() {
     {
       id: 2,
       poster: projImg2,
-      nameVideo: "GeoFilm",
+      nameVideo: "Reel",
       videoUri: geofilm,
     },
     // {
@@ -342,14 +344,20 @@ function Projects() {
     {
       id: 4,
       poster: messenger,
-      nameVideo: "Messenger Is Alive",
+      nameVideo: "Sabor a Perú",
       videoUri: messegerVideo,
     },
     {
       id: 5,
       poster: creditimage,
-      nameVideo: "Credit Song",
+      nameVideo: "Las Hurdes, tierra con alma",
       videoUri: creditsong,
+    },
+    {
+      id: 5,
+      poster: jaula,
+      nameVideo: "Jaula",
+      videoUri: jaulavideo,
     },
   ];
 
@@ -400,7 +408,7 @@ function Projects() {
                         />
                       </div>
                       <div className="center-section">
-                        <h2 className="projectstext">PROYECTOS</h2>
+                        <h2 className="projectstext">DEVELOPER</h2>
                       </div>
                       <div className="right-section">
                         <img
@@ -484,7 +492,7 @@ function Projects() {
                   />
                 </div>
                 <div className="center-section">
-                  <h2 className="projectstext">DEMOS</h2>
+                  <h2 className="projectstext">VIDEO</h2>
                 </div>
                 <div className="right-section">
                   <img
@@ -498,9 +506,8 @@ function Projects() {
               <div className="container-title-portfolio">
                 {" "}
                 <p className="desc-demo">
-                  Estos son algunos de mis trabajos que no están subidos a
-                  producción pero podemos ver un pequeño ejemplo de cómo
-                  funcionan en local.
+                  Una selección de algunos de los trabajos que he realizado a lo
+                  largo de mi trayectoria como editora y grafista.
                 </p>
               </div>
               <div className="gallery">

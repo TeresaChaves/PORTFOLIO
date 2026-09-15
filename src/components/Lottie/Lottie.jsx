@@ -1,32 +1,37 @@
 import lottie from "lottie-web";
 import React, { useEffect, createRef } from "react";
-import animation from "../../assets/animations/4.json";
+import animation from "../../assets/animations/PausePlay.json";
 import "./Lottie.css";
 
 function LottieComp() {
   let animationContainer = createRef();
-  lottie.loadAnimation({
-    container: animationContainer.current, // current instance of our container!
-    animationData: animation, // animation file!
-    renderer: "svg",
-    loop: true,
-    autoplay: true,
-    repeat: false,
-  });
+
   useEffect(() => {
     const anim = lottie.loadAnimation({
       container: animationContainer.current,
       renderer: "svg",
-      loop: true,
+      loop: false,
       autoplay: true,
       animationData: animation,
-      repeat: false,
     });
-    return () => anim.destroy(); // optional clean up for unmounting
+
+    const handleComplete = () => {
+      setTimeout(() => {
+        anim.goToAndPlay(0, true);
+      }, 5000); // pausa de 1 segundo
+    };
+
+    anim.addEventListener("complete", handleComplete);
+
+    return () => {
+      anim.removeEventListener("complete", handleComplete);
+      anim.destroy();
+    };
   }, []);
+
   return (
     <div
-      className="animation-container lottie-filter "
+      className="animation-container lottie-filter"
       ref={animationContainer}
     />
   );
