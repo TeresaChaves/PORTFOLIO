@@ -24,12 +24,12 @@ function Banner() {
     "Node",
     "Figma",
     "CSS",
-    "HTML",
+    "After Effects",
     "Git",
     "MongoDB",
     "Swagger",
     "Express",
-    "Boostrap",
+    "Premiere",
   ];
 
   const [showModal, setShowModal] = useState(false);
@@ -104,7 +104,7 @@ function Banner() {
                   }>
                   <h1 className="tagline">Teresa Chaves Maza</h1>
                   <p>{` Web Developer`}</p>{" "}
-                  <p className="cargo">{` Frontend / UX-UI`}</p>{" "}
+                  <p className="cargo">{`  VIdeo Editor / Motion Graphics`}</p>{" "}
                   <h3 className="rotate-skills">
                     {" "}
                     <span
@@ -120,9 +120,11 @@ function Banner() {
                   </p> */}
                   <p>
                     {" "}
-                    Trabajando en el sector tecnológico como desarrolladora
-                    Frontend desde <b>2021</b>.
+                    Trabajando en el sector audiovisual como editora y motion
+                    graphics desde <b>2005</b> y en el sector tecnológico como
+                    desarrolladora Frontend desde <b>2021</b>.
                   </p>
+                  <p></p>
                   <p className="despcription-banner">
                     Me gusta aprender más que comer coquinas en Huelva. Tengo la
                     Licenciatura de trabajar en equipo haciéndote sentir a gusto
@@ -136,7 +138,7 @@ function Banner() {
                     <div className="botones-experiencia">
                       <TreeListEducation></TreeListEducation>
                       <TreeList
-                        title="EXPERIENCIA PROFESIONAL"
+                        title="EXPERIENCIA PROFESIONAL DEVELOPER"
                         year01="2024 / 2025"
                         year02="2022 / 2024"
                         year03="2025"

@@ -61,25 +61,30 @@ function Skills() {
               <p></p>
               <div className="container-title-portfolio">
                 <p>
-                  Después de un año formándome de manera autodidacta, decidí
-                  completar mis conomientos como developer en una de las mejores
-                  escuelas y más exigentes a nivel nacional, IRONHACK. Este
-                  aprendizaje crece cada día dentro de los proyectos que
-                  desarrollo.
+                  Combino mis habilidades en Frontend con más de 20 años de
+                  experiencia como editora y grafista, incorporando la IA a mis
+                  procesos creativos para desarrollar nuevas formas de crear y
+                  contar historias.
+                </p>
+              </div>
+              <div className="container-portfolio">
+                <p className="skill-tec">
+                  Avid Media Composer || After Effects|| Adobe Premiere || Adobe
+                  Photoshop|| Final Cut Pro || CupCut ||
                 </p>
               </div>
               <div className="container-portfolio">
                 <p className="skill-tec">
                   HTML || CSS || Nodejs || Express || Reactjs || Typescript ||
                   Javascript || MongoDB || Socket.io || SCSS || Bootstrap || Git
-                  || Swagger || Postman ||  Netlify ||  Figma || Django
+                  || Swagger || Postman || Netlify || Figma || Django
                 </p>
               </div>
+
               <Carousel
                 responsive={responsive}
                 infinite={true}
-                className="owl-carousel owl-theme skill-slider"
-              >
+                className="owl-carousel owl-theme skill-slider">
                 <div className="item">
                   <img src={react} alt="Image" />
                   <h5>React</h5>
